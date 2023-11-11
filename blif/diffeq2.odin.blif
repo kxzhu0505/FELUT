@@ -1,0 +1,3680 @@
+.model diffeq_f_systemC
+.inputs top^clk top^reset top^aport~0 top^aport~1 top^aport~2 top^aport~3 \
+ top^aport~4 top^aport~5 top^aport~6 top^aport~7 top^aport~8 top^aport~9 \
+ top^aport~10 top^aport~11 top^aport~12 top^aport~13 top^aport~14 top^aport~15 \
+ top^aport~16 top^aport~17 top^aport~18 top^aport~19 top^aport~20 top^aport~21 \
+ top^aport~22 top^aport~23 top^aport~24 top^aport~25 top^aport~26 top^aport~27 \
+ top^aport~28 top^aport~29 top^aport~30 top^aport~31 top^dxport~0 top^dxport~1 \
+ top^dxport~2 top^dxport~3 top^dxport~4 top^dxport~5 top^dxport~6 top^dxport~7 \
+ top^dxport~8 top^dxport~9 top^dxport~10 top^dxport~11 top^dxport~12 \
+ top^dxport~13 top^dxport~14 top^dxport~15 top^dxport~16 top^dxport~17 \
+ top^dxport~18 top^dxport~19 top^dxport~20 top^dxport~21 top^dxport~22 \
+ top^dxport~23 top^dxport~24 top^dxport~25 top^dxport~26 top^dxport~27 \
+ top^dxport~28 top^dxport~29 top^dxport~30 top^dxport~31
+.outputs top^xport~0 top^xport~1 top^xport~2 top^xport~3 top^xport~4\
+ top^xport~5 top^xport~6 top^xport~7 top^xport~8 top^xport~9 top^xport~10\
+ top^xport~11 top^xport~12 top^xport~13 top^xport~14 top^xport~15 top^xport~16\
+ top^xport~17 top^xport~18 top^xport~19 top^xport~20 top^xport~21 top^xport~22\
+ top^xport~23 top^xport~24 top^xport~25 top^xport~26 top^xport~27 top^xport~28\
+ top^xport~29 top^xport~30 top^xport~31 top^yport~0 top^yport~1 top^yport~2\
+ top^yport~3 top^yport~4 top^yport~5 top^yport~6 top^yport~7 top^yport~8\
+ top^yport~9 top^yport~10 top^yport~11 top^yport~12 top^yport~13 top^yport~14\
+ top^yport~15 top^yport~16 top^yport~17 top^yport~18 top^yport~19 top^yport~20\
+ top^yport~21 top^yport~22 top^yport~23 top^yport~24 top^yport~25 top^yport~26\
+ top^yport~27 top^yport~28 top^yport~29 top^yport~30 top^yport~31 top^uport~0\
+ top^uport~1 top^uport~2 top^uport~3 top^uport~4 top^uport~5 top^uport~6\
+ top^uport~7 top^uport~8 top^uport~9 top^uport~10 top^uport~11 top^uport~12\
+ top^uport~13 top^uport~14 top^uport~15 top^uport~16 top^uport~17 top^uport~18\
+ top^uport~19 top^uport~20 top^uport~21 top^uport~22 top^uport~23 top^uport~24\
+ top^uport~25 top^uport~26 top^uport~27 top^uport~28 top^uport~29 top^uport~30\
+ top^uport~31
+
+.names gnd
+.names unconn
+.names vcc
+1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~736 top^MULTI_PORT_MUX~33^MUX_2~640
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~640 top^xport~0_FF_NODE re top^clk 3
+
+.names top^aport~0 top^xport~0_FF_NODE top^LT~37^LOGICAL_OR~449 top^LT~37^GT~448
+100 1
+
+.names top^LT~37^GT~448 top^LT~37^GT~450 top^LT~37^GT~452 top^LT~37^GT~454 top^LT~37^GT~456 top^LT~37^GT~458 top^LT~37^GT~460 top^LT~37^GT~462 top^LT~37^GT~464 top^LT~37^GT~466 top^LT~37^GT~468 top^LT~37^GT~470 top^LT~37^GT~472 top^LT~37^GT~474 top^LT~37^GT~476 top^LT~37^GT~478 top^LT~37^GT~480 top^LT~37^GT~482 top^LT~37^GT~484 top^LT~37^GT~486 top^LT~37^GT~488 top^LT~37^GT~490 top^LT~37^GT~492 top^LT~37^GT~494 top^LT~37^GT~496 top^LT~37^GT~498 top^LT~37^GT~500 top^LT~37^GT~502 top^LT~37^GT~504 top^LT~37^GT~506 top^LT~37^GT~508 top^LT~37^GT~510 top^LT~37^LOGICAL_OR~447
+1------------------------------- 1
+-1------------------------------ 1
+--1----------------------------- 1
+---1---------------------------- 1
+----1--------------------------- 1
+-----1-------------------------- 1
+------1------------------------- 1
+-------1------------------------ 1
+--------1----------------------- 1
+---------1---------------------- 1
+----------1--------------------- 1
+-----------1-------------------- 1
+------------1------------------- 1
+-------------1------------------ 1
+--------------1----------------- 1
+---------------1---------------- 1
+----------------1--------------- 1
+-----------------1-------------- 1
+------------------1------------- 1
+-------------------1------------ 1
+--------------------1----------- 1
+---------------------1---------- 1
+----------------------1--------- 1
+-----------------------1-------- 1
+------------------------1------- 1
+-------------------------1------ 1
+--------------------------1----- 1
+---------------------------1---- 1
+----------------------------1--- 1
+-----------------------------1-- 1
+------------------------------1- 1
+-------------------------------1 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^LOGICAL_XNOR~47 top^uport~0_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~704
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~704 top^MULTI_PORT_MUX~33^MUX_2~608
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~608 top^uport~0_FF_NODE re top^clk 3
+
+
+.subckt multiply a[0]=top^uport~0_FF_NODE a[1]=top^uport~1_FF_NODE\
+ a[2]=top^uport~2_FF_NODE a[3]=top^uport~3_FF_NODE a[4]=top^uport~4_FF_NODE\
+ a[5]=top^uport~5_FF_NODE a[6]=top^uport~6_FF_NODE a[7]=top^uport~7_FF_NODE\
+ a[8]=top^uport~8_FF_NODE a[9]=top^uport~9_FF_NODE a[10]=top^uport~10_FF_NODE\
+ a[11]=top^uport~11_FF_NODE a[12]=top^uport~12_FF_NODE\
+ a[13]=top^uport~13_FF_NODE a[14]=top^uport~14_FF_NODE\
+ a[15]=top^uport~15_FF_NODE a[16]=top^uport~16_FF_NODE\
+ a[17]=top^uport~17_FF_NODE a[18]=top^uport~18_FF_NODE\
+ a[19]=top^uport~19_FF_NODE a[20]=top^uport~20_FF_NODE\
+ a[21]=top^uport~21_FF_NODE a[22]=top^uport~22_FF_NODE\
+ a[23]=top^uport~23_FF_NODE a[24]=top^uport~24_FF_NODE\
+ a[25]=top^uport~25_FF_NODE a[26]=top^uport~26_FF_NODE\
+ a[27]=top^uport~27_FF_NODE a[28]=top^uport~28_FF_NODE\
+ a[29]=top^uport~29_FF_NODE a[30]=top^uport~30_FF_NODE\
+ a[31]=top^uport~31_FF_NODE a[32]=unconn a[33]=unconn a[34]=unconn\
+ a[35]=unconn b[0]=top^dxport~0 b[1]=top^dxport~1 b[2]=top^dxport~2\
+ b[3]=top^dxport~3 b[4]=top^dxport~4 b[5]=top^dxport~5 b[6]=top^dxport~6\
+ b[7]=top^dxport~7 b[8]=top^dxport~8 b[9]=top^dxport~9 b[10]=top^dxport~10\
+ b[11]=top^dxport~11 b[12]=top^dxport~12 b[13]=top^dxport~13\
+ b[14]=top^dxport~14 b[15]=top^dxport~15 b[16]=top^dxport~16\
+ b[17]=top^dxport~17 b[18]=top^dxport~18 b[19]=top^dxport~19\
+ b[20]=top^dxport~20 b[21]=top^dxport~21 b[22]=top^dxport~22\
+ b[23]=top^dxport~23 b[24]=top^dxport~24 b[25]=top^dxport~25\
+ b[26]=top^dxport~26 b[27]=top^dxport~27 b[28]=top^dxport~28\
+ b[29]=top^dxport~29 b[30]=top^dxport~30 b[31]=top^dxport~31 b[32]=unconn\
+ b[33]=unconn b[34]=unconn b[35]=unconn out[0]=top^MULTIPLY~0[0]\
+ out[1]=top^MULTIPLY~0[1] out[2]=top^MULTIPLY~0[2] out[3]=top^MULTIPLY~0[3]\
+ out[4]=top^MULTIPLY~0[4] out[5]=top^MULTIPLY~0[5] out[6]=top^MULTIPLY~0[6]\
+ out[7]=top^MULTIPLY~0[7] out[8]=top^MULTIPLY~0[8] out[9]=top^MULTIPLY~0[9]\
+ out[10]=top^MULTIPLY~0[10] out[11]=top^MULTIPLY~0[11]\
+ out[12]=top^MULTIPLY~0[12] out[13]=top^MULTIPLY~0[13]\
+ out[14]=top^MULTIPLY~0[14] out[15]=top^MULTIPLY~0[15]\
+ out[16]=top^MULTIPLY~0[16] out[17]=top^MULTIPLY~0[17]\
+ out[18]=top^MULTIPLY~0[18] out[19]=top^MULTIPLY~0[19]\
+ out[20]=top^MULTIPLY~0[20] out[21]=top^MULTIPLY~0[21]\
+ out[22]=top^MULTIPLY~0[22] out[23]=top^MULTIPLY~0[23]\
+ out[24]=top^MULTIPLY~0[24] out[25]=top^MULTIPLY~0[25]\
+ out[26]=top^MULTIPLY~0[26] out[27]=top^MULTIPLY~0[27]\
+ out[28]=top^MULTIPLY~0[28] out[29]=top^MULTIPLY~0[29]\
+ out[30]=top^MULTIPLY~0[30] out[31]=top^MULTIPLY~0[31]\
+ out[32]=top^MULTIPLY~0[32] out[33]=top^MULTIPLY~0[33]\
+ out[34]=top^MULTIPLY~0[34] out[35]=top^MULTIPLY~0[35]\
+ out[36]=top^MULTIPLY~0[36] out[37]=top^MULTIPLY~0[37]\
+ out[38]=top^MULTIPLY~0[38] out[39]=top^MULTIPLY~0[39]\
+ out[40]=top^MULTIPLY~0[40] out[41]=top^MULTIPLY~0[41]\
+ out[42]=top^MULTIPLY~0[42] out[43]=top^MULTIPLY~0[43]\
+ out[44]=top^MULTIPLY~0[44] out[45]=top^MULTIPLY~0[45]\
+ out[46]=top^MULTIPLY~0[46] out[47]=top^MULTIPLY~0[47]\
+ out[48]=top^MULTIPLY~0[48] out[49]=top^MULTIPLY~0[49]\
+ out[50]=top^MULTIPLY~0[50] out[51]=top^MULTIPLY~0[51]\
+ out[52]=top^MULTIPLY~0[52] out[53]=top^MULTIPLY~0[53]\
+ out[54]=top^MULTIPLY~0[54] out[55]=top^MULTIPLY~0[55]\
+ out[56]=top^MULTIPLY~0[56] out[57]=top^MULTIPLY~0[57]\
+ out[58]=top^MULTIPLY~0[58] out[59]=top^MULTIPLY~0[59]\
+ out[60]=top^MULTIPLY~0[60] out[61]=top^MULTIPLY~0[61]\
+ out[62]=top^MULTIPLY~0[62] out[63]=top^MULTIPLY~0[63]\
+ out[64]=top^MULTIPLY~0[64] out[65]=top^MULTIPLY~0[65]\
+ out[66]=top^MULTIPLY~0[66] out[67]=top^MULTIPLY~0[67]\
+ out[68]=top^MULTIPLY~0[68] out[69]=top^MULTIPLY~0[69]\
+ out[70]=top^MULTIPLY~0[70] out[71]=top^MULTIPLY~0[71]
+
+.names top^yport~0_FF_NODE top^MULTIPLY~0[0] top^ADD~40^LOGICAL_XOR~800
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^LOGICAL_XOR~800 top^yport~0_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~768
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~768 top^MULTI_PORT_MUX~33^MUX_2~672
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~672 top^yport~0_FF_NODE re top^clk 3
+
+
+.subckt multiply a[0]=vcc a[1]=vcc a[2]=unconn a[3]=unconn a[4]=unconn\
+ a[5]=unconn a[6]=unconn a[7]=unconn a[8]=unconn a[9]=unconn a[10]=unconn\
+ a[11]=unconn a[12]=unconn a[13]=unconn a[14]=unconn a[15]=unconn a[16]=unconn\
+ a[17]=unconn a[18]=unconn a[19]=unconn a[20]=unconn a[21]=unconn a[22]=unconn\
+ a[23]=unconn a[24]=unconn a[25]=unconn a[26]=unconn a[27]=unconn a[28]=unconn\
+ a[29]=unconn a[30]=unconn a[31]=unconn a[32]=unconn a[33]=unconn a[34]=unconn\
+ a[35]=unconn b[0]=top^yport~0_FF_NODE b[1]=top^yport~1_FF_NODE\
+ b[2]=top^yport~2_FF_NODE b[3]=top^yport~3_FF_NODE b[4]=top^yport~4_FF_NODE\
+ b[5]=top^yport~5_FF_NODE b[6]=top^yport~6_FF_NODE b[7]=top^yport~7_FF_NODE\
+ b[8]=top^yport~8_FF_NODE b[9]=top^yport~9_FF_NODE b[10]=top^yport~10_FF_NODE\
+ b[11]=top^yport~11_FF_NODE b[12]=top^yport~12_FF_NODE\
+ b[13]=top^yport~13_FF_NODE b[14]=top^yport~14_FF_NODE\
+ b[15]=top^yport~15_FF_NODE b[16]=top^yport~16_FF_NODE\
+ b[17]=top^yport~17_FF_NODE b[18]=top^yport~18_FF_NODE\
+ b[19]=top^yport~19_FF_NODE b[20]=top^yport~20_FF_NODE\
+ b[21]=top^yport~21_FF_NODE b[22]=top^yport~22_FF_NODE\
+ b[23]=top^yport~23_FF_NODE b[24]=top^yport~24_FF_NODE\
+ b[25]=top^yport~25_FF_NODE b[26]=top^yport~26_FF_NODE\
+ b[27]=top^yport~27_FF_NODE b[28]=top^yport~28_FF_NODE\
+ b[29]=top^yport~29_FF_NODE b[30]=top^yport~30_FF_NODE\
+ b[31]=top^yport~31_FF_NODE b[32]=unconn b[33]=unconn b[34]=unconn\
+ b[35]=unconn out[0]=top^MULTIPLY~44[0] out[1]=top^MULTIPLY~44[1]\
+ out[2]=top^MULTIPLY~44[2] out[3]=top^MULTIPLY~44[3] out[4]=top^MULTIPLY~44[4]\
+ out[5]=top^MULTIPLY~44[5] out[6]=top^MULTIPLY~44[6] out[7]=top^MULTIPLY~44[7]\
+ out[8]=top^MULTIPLY~44[8] out[9]=top^MULTIPLY~44[9]\
+ out[10]=top^MULTIPLY~44[10] out[11]=top^MULTIPLY~44[11]\
+ out[12]=top^MULTIPLY~44[12] out[13]=top^MULTIPLY~44[13]\
+ out[14]=top^MULTIPLY~44[14] out[15]=top^MULTIPLY~44[15]\
+ out[16]=top^MULTIPLY~44[16] out[17]=top^MULTIPLY~44[17]\
+ out[18]=top^MULTIPLY~44[18] out[19]=top^MULTIPLY~44[19]\
+ out[20]=top^MULTIPLY~44[20] out[21]=top^MULTIPLY~44[21]\
+ out[22]=top^MULTIPLY~44[22] out[23]=top^MULTIPLY~44[23]\
+ out[24]=top^MULTIPLY~44[24] out[25]=top^MULTIPLY~44[25]\
+ out[26]=top^MULTIPLY~44[26] out[27]=top^MULTIPLY~44[27]\
+ out[28]=top^MULTIPLY~44[28] out[29]=top^MULTIPLY~44[29]\
+ out[30]=top^MULTIPLY~44[30] out[31]=top^MULTIPLY~44[31]\
+ out[32]=top^MULTIPLY~44[32] out[33]=top^MULTIPLY~44[33]\
+ out[34]=top^MULTIPLY~44[34] out[35]=top^MULTIPLY~44[35]\
+ out[36]=top^MULTIPLY~44[36] out[37]=top^MULTIPLY~44[37]\
+ out[38]=top^MULTIPLY~44[38] out[39]=top^MULTIPLY~44[39]\
+ out[40]=top^MULTIPLY~44[40] out[41]=top^MULTIPLY~44[41]\
+ out[42]=top^MULTIPLY~44[42] out[43]=top^MULTIPLY~44[43]\
+ out[44]=top^MULTIPLY~44[44] out[45]=top^MULTIPLY~44[45]\
+ out[46]=top^MULTIPLY~44[46] out[47]=top^MULTIPLY~44[47]\
+ out[48]=top^MULTIPLY~44[48] out[49]=top^MULTIPLY~44[49]\
+ out[50]=top^MULTIPLY~44[50] out[51]=top^MULTIPLY~44[51]\
+ out[52]=top^MULTIPLY~44[52] out[53]=top^MULTIPLY~44[53]\
+ out[54]=top^MULTIPLY~44[54] out[55]=top^MULTIPLY~44[55]\
+ out[56]=top^MULTIPLY~44[56] out[57]=top^MULTIPLY~44[57]\
+ out[58]=top^MULTIPLY~44[58] out[59]=top^MULTIPLY~44[59]\
+ out[60]=top^MULTIPLY~44[60] out[61]=top^MULTIPLY~44[61]\
+ out[62]=top^MULTIPLY~44[62] out[63]=top^MULTIPLY~44[63]\
+ out[64]=top^MULTIPLY~44[64] out[65]=top^MULTIPLY~44[65]\
+ out[66]=top^MULTIPLY~44[66] out[67]=top^MULTIPLY~44[67]\
+ out[68]=top^MULTIPLY~44[68] out[69]=top^MULTIPLY~44[69]\
+ out[70]=top^MULTIPLY~44[70] out[71]=top^MULTIPLY~44[71]
+
+
+.subckt multiply a[0]=top^dxport~0 a[1]=top^dxport~1 a[2]=top^dxport~2\
+ a[3]=top^dxport~3 a[4]=top^dxport~4 a[5]=top^dxport~5 a[6]=top^dxport~6\
+ a[7]=top^dxport~7 a[8]=top^dxport~8 a[9]=top^dxport~9 a[10]=top^dxport~10\
+ a[11]=top^dxport~11 a[12]=top^dxport~12 a[13]=top^dxport~13\
+ a[14]=top^dxport~14 a[15]=top^dxport~15 a[16]=top^dxport~16\
+ a[17]=top^dxport~17 a[18]=top^dxport~18 a[19]=top^dxport~19\
+ a[20]=top^dxport~20 a[21]=top^dxport~21 a[22]=top^dxport~22\
+ a[23]=top^dxport~23 a[24]=top^dxport~24 a[25]=top^dxport~25\
+ a[26]=top^dxport~26 a[27]=top^dxport~27 a[28]=top^dxport~28\
+ a[29]=top^dxport~29 a[30]=top^dxport~30 a[31]=top^dxport~31 a[32]=unconn\
+ a[33]=unconn a[34]=unconn a[35]=unconn b[0]=top^MULTIPLY~44[0]\
+ b[1]=top^MULTIPLY~44[1] b[2]=top^MULTIPLY~44[2] b[3]=top^MULTIPLY~44[3]\
+ b[4]=top^MULTIPLY~44[4] b[5]=top^MULTIPLY~44[5] b[6]=top^MULTIPLY~44[6]\
+ b[7]=top^MULTIPLY~44[7] b[8]=top^MULTIPLY~44[8] b[9]=top^MULTIPLY~44[9]\
+ b[10]=top^MULTIPLY~44[10] b[11]=top^MULTIPLY~44[11] b[12]=top^MULTIPLY~44[12]\
+ b[13]=top^MULTIPLY~44[13] b[14]=top^MULTIPLY~44[14] b[15]=top^MULTIPLY~44[15]\
+ b[16]=top^MULTIPLY~44[16] b[17]=top^MULTIPLY~44[17] b[18]=top^MULTIPLY~44[18]\
+ b[19]=top^MULTIPLY~44[19] b[20]=top^MULTIPLY~44[20] b[21]=top^MULTIPLY~44[21]\
+ b[22]=top^MULTIPLY~44[22] b[23]=top^MULTIPLY~44[23] b[24]=top^MULTIPLY~44[24]\
+ b[25]=top^MULTIPLY~44[25] b[26]=top^MULTIPLY~44[26] b[27]=top^MULTIPLY~44[27]\
+ b[28]=top^MULTIPLY~44[28] b[29]=top^MULTIPLY~44[29] b[30]=top^MULTIPLY~44[30]\
+ b[31]=top^MULTIPLY~44[31] b[32]=top^MULTIPLY~44[32] b[33]=top^MULTIPLY~44[33]\
+ b[34]=unconn b[35]=unconn out[0]=top^MULTIPLY~45[0] out[1]=top^MULTIPLY~45[1]\
+ out[2]=top^MULTIPLY~45[2] out[3]=top^MULTIPLY~45[3] out[4]=top^MULTIPLY~45[4]\
+ out[5]=top^MULTIPLY~45[5] out[6]=top^MULTIPLY~45[6] out[7]=top^MULTIPLY~45[7]\
+ out[8]=top^MULTIPLY~45[8] out[9]=top^MULTIPLY~45[9]\
+ out[10]=top^MULTIPLY~45[10] out[11]=top^MULTIPLY~45[11]\
+ out[12]=top^MULTIPLY~45[12] out[13]=top^MULTIPLY~45[13]\
+ out[14]=top^MULTIPLY~45[14] out[15]=top^MULTIPLY~45[15]\
+ out[16]=top^MULTIPLY~45[16] out[17]=top^MULTIPLY~45[17]\
+ out[18]=top^MULTIPLY~45[18] out[19]=top^MULTIPLY~45[19]\
+ out[20]=top^MULTIPLY~45[20] out[21]=top^MULTIPLY~45[21]\
+ out[22]=top^MULTIPLY~45[22] out[23]=top^MULTIPLY~45[23]\
+ out[24]=top^MULTIPLY~45[24] out[25]=top^MULTIPLY~45[25]\
+ out[26]=top^MULTIPLY~45[26] out[27]=top^MULTIPLY~45[27]\
+ out[28]=top^MULTIPLY~45[28] out[29]=top^MULTIPLY~45[29]\
+ out[30]=top^MULTIPLY~45[30] out[31]=top^MULTIPLY~45[31]\
+ out[32]=top^MULTIPLY~45[32] out[33]=top^MULTIPLY~45[33]\
+ out[34]=top^MULTIPLY~45[34] out[35]=top^MULTIPLY~45[35]\
+ out[36]=top^MULTIPLY~45[36] out[37]=top^MULTIPLY~45[37]\
+ out[38]=top^MULTIPLY~45[38] out[39]=top^MULTIPLY~45[39]\
+ out[40]=top^MULTIPLY~45[40] out[41]=top^MULTIPLY~45[41]\
+ out[42]=top^MULTIPLY~45[42] out[43]=top^MULTIPLY~45[43]\
+ out[44]=top^MULTIPLY~45[44] out[45]=top^MULTIPLY~45[45]\
+ out[46]=top^MULTIPLY~45[46] out[47]=top^MULTIPLY~45[47]\
+ out[48]=top^MULTIPLY~45[48] out[49]=top^MULTIPLY~45[49]\
+ out[50]=top^MULTIPLY~45[50] out[51]=top^MULTIPLY~45[51]\
+ out[52]=top^MULTIPLY~45[52] out[53]=top^MULTIPLY~45[53]\
+ out[54]=top^MULTIPLY~45[54] out[55]=top^MULTIPLY~45[55]\
+ out[56]=top^MULTIPLY~45[56] out[57]=top^MULTIPLY~45[57]\
+ out[58]=top^MULTIPLY~45[58] out[59]=top^MULTIPLY~45[59]\
+ out[60]=top^MULTIPLY~45[60] out[61]=top^MULTIPLY~45[61]\
+ out[62]=top^MULTIPLY~45[62] out[63]=top^MULTIPLY~45[63]\
+ out[64]=top^MULTIPLY~45[64] out[65]=top^MULTIPLY~45[65]\
+ out[66]=top^MULTIPLY~45[66] out[67]=top^MULTIPLY~45[67]\
+ out[68]=top^MULTIPLY~45[68] out[69]=top^MULTIPLY~45[69]\
+ out[70]=top^MULTIPLY~45[70] out[71]=top^MULTIPLY~45[71]
+
+.names top^MULTIPLY~45[0] top^MINUS~46^LOGICAL_NOT~48
+0 1
+
+.names top^MINUS~43^LOGICAL_XNOR~246 top^MINUS~46^LOGICAL_NOT~48 top^MINUS~46^LOGICAL_XNOR~47
+00 1
+11 1
+
+.names top^MINUS~43^LOGICAL_XNOR~246 top^MINUS~46^LOGICAL_NOT~48 top^MINUS~46^LOGICAL_OR~49
+1- 1
+-1 1
+
+.names top^MINUS~46^LOGICAL_OR~49 top^MINUS~43^ADDER_FUNC~249 top^MINUS~46^LOGICAL_NOT~51 top^MINUS~46^ADDER_FUNC~50
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~50 top^uport~1_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~705
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~705 top^MULTI_PORT_MUX~33^MUX_2~609
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~609 top^uport~1_FF_NODE re top^clk 3
+
+.names top^MINUS~43^LOGICAL_OR~248 top^uport~1_FF_NODE top^MINUS~43^LOGICAL_NOT~250 top^MINUS~43^ADDER_FUNC~249
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^LOGICAL_OR~49 top^MINUS~43^ADDER_FUNC~249 top^MINUS~46^LOGICAL_NOT~51 top^MINUS~46^CARRY_FUNC~52
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~52 top^MINUS~43^ADDER_FUNC~252 top^MINUS~46^LOGICAL_NOT~54 top^MINUS~46^ADDER_FUNC~53
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~53 top^uport~2_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~716
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~716 top^MULTI_PORT_MUX~33^MUX_2~620
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~620 top^uport~2_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~251 top^uport~2_FF_NODE top^MINUS~43^LOGICAL_NOT~253 top^MINUS~43^ADDER_FUNC~252
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~52 top^MINUS~43^ADDER_FUNC~252 top^MINUS~46^LOGICAL_NOT~54 top^MINUS~46^CARRY_FUNC~55
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~55 top^MINUS~43^ADDER_FUNC~255 top^MINUS~46^LOGICAL_NOT~57 top^MINUS~46^ADDER_FUNC~56
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~56 top^uport~3_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~727
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~727 top^MULTI_PORT_MUX~33^MUX_2~631
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~631 top^uport~3_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~254 top^uport~3_FF_NODE top^MINUS~43^LOGICAL_NOT~256 top^MINUS~43^ADDER_FUNC~255
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~55 top^MINUS~43^ADDER_FUNC~255 top^MINUS~46^LOGICAL_NOT~57 top^MINUS~46^CARRY_FUNC~58
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~58 top^MINUS~43^ADDER_FUNC~258 top^MINUS~46^LOGICAL_NOT~60 top^MINUS~46^ADDER_FUNC~59
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~59 top^uport~4_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~730
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~730 top^MULTI_PORT_MUX~33^MUX_2~634
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~634 top^uport~4_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~257 top^uport~4_FF_NODE top^MINUS~43^LOGICAL_NOT~259 top^MINUS~43^ADDER_FUNC~258
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~58 top^MINUS~43^ADDER_FUNC~258 top^MINUS~46^LOGICAL_NOT~60 top^MINUS~46^CARRY_FUNC~61
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~61 top^MINUS~43^ADDER_FUNC~261 top^MINUS~46^LOGICAL_NOT~63 top^MINUS~46^ADDER_FUNC~62
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~62 top^uport~5_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~731
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~731 top^MULTI_PORT_MUX~33^MUX_2~635
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~635 top^uport~5_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~260 top^uport~5_FF_NODE top^MINUS~43^LOGICAL_NOT~262 top^MINUS~43^ADDER_FUNC~261
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~61 top^MINUS~43^ADDER_FUNC~261 top^MINUS~46^LOGICAL_NOT~63 top^MINUS~46^CARRY_FUNC~64
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~64 top^MINUS~43^ADDER_FUNC~264 top^MINUS~46^LOGICAL_NOT~66 top^MINUS~46^ADDER_FUNC~65
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~65 top^uport~6_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~732
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~732 top^MULTI_PORT_MUX~33^MUX_2~636
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~636 top^uport~6_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~263 top^uport~6_FF_NODE top^MINUS~43^LOGICAL_NOT~265 top^MINUS~43^ADDER_FUNC~264
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~64 top^MINUS~43^ADDER_FUNC~264 top^MINUS~46^LOGICAL_NOT~66 top^MINUS~46^CARRY_FUNC~67
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~67 top^MINUS~43^ADDER_FUNC~267 top^MINUS~46^LOGICAL_NOT~69 top^MINUS~46^ADDER_FUNC~68
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~68 top^uport~7_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~733
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~733 top^MULTI_PORT_MUX~33^MUX_2~637
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~637 top^uport~7_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~266 top^uport~7_FF_NODE top^MINUS~43^LOGICAL_NOT~268 top^MINUS~43^ADDER_FUNC~267
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~67 top^MINUS~43^ADDER_FUNC~267 top^MINUS~46^LOGICAL_NOT~69 top^MINUS~46^CARRY_FUNC~70
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~70 top^MINUS~43^ADDER_FUNC~270 top^MINUS~46^LOGICAL_NOT~72 top^MINUS~46^ADDER_FUNC~71
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~71 top^uport~8_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~734
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~734 top^MULTI_PORT_MUX~33^MUX_2~638
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~638 top^uport~8_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~269 top^uport~8_FF_NODE top^MINUS~43^LOGICAL_NOT~271 top^MINUS~43^ADDER_FUNC~270
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~70 top^MINUS~43^ADDER_FUNC~270 top^MINUS~46^LOGICAL_NOT~72 top^MINUS~46^CARRY_FUNC~73
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~73 top^MINUS~43^ADDER_FUNC~273 top^MINUS~46^LOGICAL_NOT~75 top^MINUS~46^ADDER_FUNC~74
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~74 top^uport~9_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~735
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~735 top^MULTI_PORT_MUX~33^MUX_2~639
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~639 top^uport~9_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~272 top^uport~9_FF_NODE top^MINUS~43^LOGICAL_NOT~274 top^MINUS~43^ADDER_FUNC~273
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~73 top^MINUS~43^ADDER_FUNC~273 top^MINUS~46^LOGICAL_NOT~75 top^MINUS~46^CARRY_FUNC~76
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~76 top^MINUS~43^ADDER_FUNC~276 top^MINUS~46^LOGICAL_NOT~78 top^MINUS~46^ADDER_FUNC~77
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~77 top^uport~10_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~706
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~706 top^MULTI_PORT_MUX~33^MUX_2~610
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~610 top^uport~10_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~275 top^uport~10_FF_NODE top^MINUS~43^LOGICAL_NOT~277 top^MINUS~43^ADDER_FUNC~276
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~76 top^MINUS~43^ADDER_FUNC~276 top^MINUS~46^LOGICAL_NOT~78 top^MINUS~46^CARRY_FUNC~79
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~79 top^MINUS~43^ADDER_FUNC~279 top^MINUS~46^LOGICAL_NOT~81 top^MINUS~46^ADDER_FUNC~80
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~80 top^uport~11_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~707
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~707 top^MULTI_PORT_MUX~33^MUX_2~611
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~611 top^uport~11_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~278 top^uport~11_FF_NODE top^MINUS~43^LOGICAL_NOT~280 top^MINUS~43^ADDER_FUNC~279
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~79 top^MINUS~43^ADDER_FUNC~279 top^MINUS~46^LOGICAL_NOT~81 top^MINUS~46^CARRY_FUNC~82
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~82 top^MINUS~43^ADDER_FUNC~282 top^MINUS~46^LOGICAL_NOT~84 top^MINUS~46^ADDER_FUNC~83
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~83 top^uport~12_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~708
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~708 top^MULTI_PORT_MUX~33^MUX_2~612
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~612 top^uport~12_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~281 top^uport~12_FF_NODE top^MINUS~43^LOGICAL_NOT~283 top^MINUS~43^ADDER_FUNC~282
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~82 top^MINUS~43^ADDER_FUNC~282 top^MINUS~46^LOGICAL_NOT~84 top^MINUS~46^CARRY_FUNC~85
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~85 top^MINUS~43^ADDER_FUNC~285 top^MINUS~46^LOGICAL_NOT~87 top^MINUS~46^ADDER_FUNC~86
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~86 top^uport~13_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~709
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~709 top^MULTI_PORT_MUX~33^MUX_2~613
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~613 top^uport~13_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~284 top^uport~13_FF_NODE top^MINUS~43^LOGICAL_NOT~286 top^MINUS~43^ADDER_FUNC~285
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~85 top^MINUS~43^ADDER_FUNC~285 top^MINUS~46^LOGICAL_NOT~87 top^MINUS~46^CARRY_FUNC~88
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~88 top^MINUS~43^ADDER_FUNC~288 top^MINUS~46^LOGICAL_NOT~90 top^MINUS~46^ADDER_FUNC~89
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~89 top^uport~14_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~710
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~710 top^MULTI_PORT_MUX~33^MUX_2~614
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~614 top^uport~14_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~287 top^uport~14_FF_NODE top^MINUS~43^LOGICAL_NOT~289 top^MINUS~43^ADDER_FUNC~288
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~88 top^MINUS~43^ADDER_FUNC~288 top^MINUS~46^LOGICAL_NOT~90 top^MINUS~46^CARRY_FUNC~91
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~91 top^MINUS~43^ADDER_FUNC~291 top^MINUS~46^LOGICAL_NOT~93 top^MINUS~46^ADDER_FUNC~92
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~92 top^uport~15_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~711
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~711 top^MULTI_PORT_MUX~33^MUX_2~615
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~615 top^uport~15_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~290 top^uport~15_FF_NODE top^MINUS~43^LOGICAL_NOT~292 top^MINUS~43^ADDER_FUNC~291
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~91 top^MINUS~43^ADDER_FUNC~291 top^MINUS~46^LOGICAL_NOT~93 top^MINUS~46^CARRY_FUNC~94
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~94 top^MINUS~43^ADDER_FUNC~294 top^MINUS~46^LOGICAL_NOT~96 top^MINUS~46^ADDER_FUNC~95
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~95 top^uport~16_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~712
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~712 top^MULTI_PORT_MUX~33^MUX_2~616
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~616 top^uport~16_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~293 top^uport~16_FF_NODE top^MINUS~43^LOGICAL_NOT~295 top^MINUS~43^ADDER_FUNC~294
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~94 top^MINUS~43^ADDER_FUNC~294 top^MINUS~46^LOGICAL_NOT~96 top^MINUS~46^CARRY_FUNC~97
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~97 top^MINUS~43^ADDER_FUNC~297 top^MINUS~46^LOGICAL_NOT~99 top^MINUS~46^ADDER_FUNC~98
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~98 top^uport~17_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~713
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~713 top^MULTI_PORT_MUX~33^MUX_2~617
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~617 top^uport~17_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~296 top^uport~17_FF_NODE top^MINUS~43^LOGICAL_NOT~298 top^MINUS~43^ADDER_FUNC~297
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~97 top^MINUS~43^ADDER_FUNC~297 top^MINUS~46^LOGICAL_NOT~99 top^MINUS~46^CARRY_FUNC~100
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~100 top^MINUS~43^ADDER_FUNC~300 top^MINUS~46^LOGICAL_NOT~102 top^MINUS~46^ADDER_FUNC~101
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~101 top^uport~18_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~714
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~714 top^MULTI_PORT_MUX~33^MUX_2~618
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~618 top^uport~18_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~299 top^uport~18_FF_NODE top^MINUS~43^LOGICAL_NOT~301 top^MINUS~43^ADDER_FUNC~300
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~100 top^MINUS~43^ADDER_FUNC~300 top^MINUS~46^LOGICAL_NOT~102 top^MINUS~46^CARRY_FUNC~103
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~103 top^MINUS~43^ADDER_FUNC~303 top^MINUS~46^LOGICAL_NOT~105 top^MINUS~46^ADDER_FUNC~104
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~104 top^uport~19_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~715
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~715 top^MULTI_PORT_MUX~33^MUX_2~619
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~619 top^uport~19_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~302 top^uport~19_FF_NODE top^MINUS~43^LOGICAL_NOT~304 top^MINUS~43^ADDER_FUNC~303
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~103 top^MINUS~43^ADDER_FUNC~303 top^MINUS~46^LOGICAL_NOT~105 top^MINUS~46^CARRY_FUNC~106
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~106 top^MINUS~43^ADDER_FUNC~306 top^MINUS~46^LOGICAL_NOT~108 top^MINUS~46^ADDER_FUNC~107
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~107 top^uport~20_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~717
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~717 top^MULTI_PORT_MUX~33^MUX_2~621
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~621 top^uport~20_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~305 top^uport~20_FF_NODE top^MINUS~43^LOGICAL_NOT~307 top^MINUS~43^ADDER_FUNC~306
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~106 top^MINUS~43^ADDER_FUNC~306 top^MINUS~46^LOGICAL_NOT~108 top^MINUS~46^CARRY_FUNC~109
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~109 top^MINUS~43^ADDER_FUNC~309 top^MINUS~46^LOGICAL_NOT~111 top^MINUS~46^ADDER_FUNC~110
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~110 top^uport~21_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~718
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~718 top^MULTI_PORT_MUX~33^MUX_2~622
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~622 top^uport~21_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~308 top^uport~21_FF_NODE top^MINUS~43^LOGICAL_NOT~310 top^MINUS~43^ADDER_FUNC~309
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~109 top^MINUS~43^ADDER_FUNC~309 top^MINUS~46^LOGICAL_NOT~111 top^MINUS~46^CARRY_FUNC~112
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~112 top^MINUS~43^ADDER_FUNC~312 top^MINUS~46^LOGICAL_NOT~114 top^MINUS~46^ADDER_FUNC~113
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~113 top^uport~22_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~719
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~719 top^MULTI_PORT_MUX~33^MUX_2~623
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~623 top^uport~22_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~311 top^uport~22_FF_NODE top^MINUS~43^LOGICAL_NOT~313 top^MINUS~43^ADDER_FUNC~312
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~112 top^MINUS~43^ADDER_FUNC~312 top^MINUS~46^LOGICAL_NOT~114 top^MINUS~46^CARRY_FUNC~115
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~115 top^MINUS~43^ADDER_FUNC~315 top^MINUS~46^LOGICAL_NOT~117 top^MINUS~46^ADDER_FUNC~116
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~116 top^uport~23_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~720
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~720 top^MULTI_PORT_MUX~33^MUX_2~624
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~624 top^uport~23_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~314 top^uport~23_FF_NODE top^MINUS~43^LOGICAL_NOT~316 top^MINUS~43^ADDER_FUNC~315
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~115 top^MINUS~43^ADDER_FUNC~315 top^MINUS~46^LOGICAL_NOT~117 top^MINUS~46^CARRY_FUNC~118
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~118 top^MINUS~43^ADDER_FUNC~318 top^MINUS~46^LOGICAL_NOT~120 top^MINUS~46^ADDER_FUNC~119
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~119 top^uport~24_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~721
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~721 top^MULTI_PORT_MUX~33^MUX_2~625
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~625 top^uport~24_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~317 top^uport~24_FF_NODE top^MINUS~43^LOGICAL_NOT~319 top^MINUS~43^ADDER_FUNC~318
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~118 top^MINUS~43^ADDER_FUNC~318 top^MINUS~46^LOGICAL_NOT~120 top^MINUS~46^CARRY_FUNC~121
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~121 top^MINUS~43^ADDER_FUNC~321 top^MINUS~46^LOGICAL_NOT~123 top^MINUS~46^ADDER_FUNC~122
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~122 top^uport~25_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~722
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~722 top^MULTI_PORT_MUX~33^MUX_2~626
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~626 top^uport~25_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~320 top^uport~25_FF_NODE top^MINUS~43^LOGICAL_NOT~322 top^MINUS~43^ADDER_FUNC~321
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~121 top^MINUS~43^ADDER_FUNC~321 top^MINUS~46^LOGICAL_NOT~123 top^MINUS~46^CARRY_FUNC~124
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~124 top^MINUS~43^ADDER_FUNC~324 top^MINUS~46^LOGICAL_NOT~126 top^MINUS~46^ADDER_FUNC~125
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~125 top^uport~26_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~723
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~723 top^MULTI_PORT_MUX~33^MUX_2~627
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~627 top^uport~26_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~323 top^uport~26_FF_NODE top^MINUS~43^LOGICAL_NOT~325 top^MINUS~43^ADDER_FUNC~324
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~124 top^MINUS~43^ADDER_FUNC~324 top^MINUS~46^LOGICAL_NOT~126 top^MINUS~46^CARRY_FUNC~127
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~127 top^MINUS~43^ADDER_FUNC~327 top^MINUS~46^LOGICAL_NOT~129 top^MINUS~46^ADDER_FUNC~128
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~128 top^uport~27_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~724
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~724 top^MULTI_PORT_MUX~33^MUX_2~628
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~628 top^uport~27_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~326 top^uport~27_FF_NODE top^MINUS~43^LOGICAL_NOT~328 top^MINUS~43^ADDER_FUNC~327
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~127 top^MINUS~43^ADDER_FUNC~327 top^MINUS~46^LOGICAL_NOT~129 top^MINUS~46^CARRY_FUNC~130
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~130 top^MINUS~43^ADDER_FUNC~330 top^MINUS~46^LOGICAL_NOT~132 top^MINUS~46^ADDER_FUNC~131
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~131 top^uport~28_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~725
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~725 top^MULTI_PORT_MUX~33^MUX_2~629
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~629 top^uport~28_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~329 top^uport~28_FF_NODE top^MINUS~43^LOGICAL_NOT~331 top^MINUS~43^ADDER_FUNC~330
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~130 top^MINUS~43^ADDER_FUNC~330 top^MINUS~46^LOGICAL_NOT~132 top^MINUS~46^CARRY_FUNC~133
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~133 top^MINUS~43^ADDER_FUNC~333 top^MINUS~46^LOGICAL_NOT~135 top^MINUS~46^ADDER_FUNC~134
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~134 top^uport~29_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~726
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~726 top^MULTI_PORT_MUX~33^MUX_2~630
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~630 top^uport~29_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~332 top^uport~29_FF_NODE top^MINUS~43^LOGICAL_NOT~334 top^MINUS~43^ADDER_FUNC~333
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~133 top^MINUS~43^ADDER_FUNC~333 top^MINUS~46^LOGICAL_NOT~135 top^MINUS~46^CARRY_FUNC~136
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~136 top^MINUS~43^ADDER_FUNC~336 top^MINUS~46^LOGICAL_NOT~138 top^MINUS~46^ADDER_FUNC~137
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~137 top^uport~30_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~728
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~728 top^MULTI_PORT_MUX~33^MUX_2~632
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~632 top^uport~30_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~335 top^uport~30_FF_NODE top^MINUS~43^LOGICAL_NOT~337 top^MINUS~43^ADDER_FUNC~336
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~136 top^MINUS~43^ADDER_FUNC~336 top^MINUS~46^LOGICAL_NOT~138 top^MINUS~46^CARRY_FUNC~139
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~46^CARRY_FUNC~139 top^MINUS~43^ADDER_FUNC~339 top^MINUS~46^LOGICAL_NOT~141 top^MINUS~46^ADDER_FUNC~140
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^MINUS~46^ADDER_FUNC~140 top^uport~31_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~729
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~729 top^MULTI_PORT_MUX~33^MUX_2~633
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~633 top^uport~31_FF_NODE re top^clk 3
+
+.names top^MINUS~43^CARRY_FUNC~338 top^uport~31_FF_NODE top^MINUS~43^LOGICAL_NOT~340 top^MINUS~43^ADDER_FUNC~339
+001 1
+010 1
+100 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~335 top^uport~30_FF_NODE top^MINUS~43^LOGICAL_NOT~337 top^MINUS~43^CARRY_FUNC~338
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~332 top^uport~29_FF_NODE top^MINUS~43^LOGICAL_NOT~334 top^MINUS~43^CARRY_FUNC~335
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~329 top^uport~28_FF_NODE top^MINUS~43^LOGICAL_NOT~331 top^MINUS~43^CARRY_FUNC~332
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~326 top^uport~27_FF_NODE top^MINUS~43^LOGICAL_NOT~328 top^MINUS~43^CARRY_FUNC~329
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~323 top^uport~26_FF_NODE top^MINUS~43^LOGICAL_NOT~325 top^MINUS~43^CARRY_FUNC~326
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~320 top^uport~25_FF_NODE top^MINUS~43^LOGICAL_NOT~322 top^MINUS~43^CARRY_FUNC~323
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~317 top^uport~24_FF_NODE top^MINUS~43^LOGICAL_NOT~319 top^MINUS~43^CARRY_FUNC~320
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~314 top^uport~23_FF_NODE top^MINUS~43^LOGICAL_NOT~316 top^MINUS~43^CARRY_FUNC~317
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~311 top^uport~22_FF_NODE top^MINUS~43^LOGICAL_NOT~313 top^MINUS~43^CARRY_FUNC~314
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~308 top^uport~21_FF_NODE top^MINUS~43^LOGICAL_NOT~310 top^MINUS~43^CARRY_FUNC~311
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~305 top^uport~20_FF_NODE top^MINUS~43^LOGICAL_NOT~307 top^MINUS~43^CARRY_FUNC~308
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~302 top^uport~19_FF_NODE top^MINUS~43^LOGICAL_NOT~304 top^MINUS~43^CARRY_FUNC~305
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~299 top^uport~18_FF_NODE top^MINUS~43^LOGICAL_NOT~301 top^MINUS~43^CARRY_FUNC~302
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~296 top^uport~17_FF_NODE top^MINUS~43^LOGICAL_NOT~298 top^MINUS~43^CARRY_FUNC~299
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~293 top^uport~16_FF_NODE top^MINUS~43^LOGICAL_NOT~295 top^MINUS~43^CARRY_FUNC~296
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~290 top^uport~15_FF_NODE top^MINUS~43^LOGICAL_NOT~292 top^MINUS~43^CARRY_FUNC~293
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~287 top^uport~14_FF_NODE top^MINUS~43^LOGICAL_NOT~289 top^MINUS~43^CARRY_FUNC~290
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~284 top^uport~13_FF_NODE top^MINUS~43^LOGICAL_NOT~286 top^MINUS~43^CARRY_FUNC~287
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~281 top^uport~12_FF_NODE top^MINUS~43^LOGICAL_NOT~283 top^MINUS~43^CARRY_FUNC~284
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~278 top^uport~11_FF_NODE top^MINUS~43^LOGICAL_NOT~280 top^MINUS~43^CARRY_FUNC~281
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~275 top^uport~10_FF_NODE top^MINUS~43^LOGICAL_NOT~277 top^MINUS~43^CARRY_FUNC~278
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~272 top^uport~9_FF_NODE top^MINUS~43^LOGICAL_NOT~274 top^MINUS~43^CARRY_FUNC~275
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~269 top^uport~8_FF_NODE top^MINUS~43^LOGICAL_NOT~271 top^MINUS~43^CARRY_FUNC~272
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~266 top^uport~7_FF_NODE top^MINUS~43^LOGICAL_NOT~268 top^MINUS~43^CARRY_FUNC~269
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~263 top^uport~6_FF_NODE top^MINUS~43^LOGICAL_NOT~265 top^MINUS~43^CARRY_FUNC~266
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~260 top^uport~5_FF_NODE top^MINUS~43^LOGICAL_NOT~262 top^MINUS~43^CARRY_FUNC~263
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~257 top^uport~4_FF_NODE top^MINUS~43^LOGICAL_NOT~259 top^MINUS~43^CARRY_FUNC~260
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~254 top^uport~3_FF_NODE top^MINUS~43^LOGICAL_NOT~256 top^MINUS~43^CARRY_FUNC~257
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^CARRY_FUNC~251 top^uport~2_FF_NODE top^MINUS~43^LOGICAL_NOT~253 top^MINUS~43^CARRY_FUNC~254
+011 1
+101 1
+110 1
+111 1
+
+.names top^MINUS~43^LOGICAL_OR~248 top^uport~1_FF_NODE top^MINUS~43^LOGICAL_NOT~250 top^MINUS~43^CARRY_FUNC~251
+011 1
+101 1
+110 1
+111 1
+
+.names top^MULTIPLY~45[1] top^MINUS~46^LOGICAL_NOT~51
+0 1
+
+.names top^MULTIPLY~45[2] top^MINUS~46^LOGICAL_NOT~54
+0 1
+
+.names top^MULTIPLY~45[3] top^MINUS~46^LOGICAL_NOT~57
+0 1
+
+.names top^MULTIPLY~45[4] top^MINUS~46^LOGICAL_NOT~60
+0 1
+
+.names top^MULTIPLY~45[5] top^MINUS~46^LOGICAL_NOT~63
+0 1
+
+.names top^MULTIPLY~45[6] top^MINUS~46^LOGICAL_NOT~66
+0 1
+
+.names top^MULTIPLY~45[7] top^MINUS~46^LOGICAL_NOT~69
+0 1
+
+.names top^MULTIPLY~45[8] top^MINUS~46^LOGICAL_NOT~72
+0 1
+
+.names top^MULTIPLY~45[9] top^MINUS~46^LOGICAL_NOT~75
+0 1
+
+.names top^MULTIPLY~45[10] top^MINUS~46^LOGICAL_NOT~78
+0 1
+
+.names top^MULTIPLY~45[11] top^MINUS~46^LOGICAL_NOT~81
+0 1
+
+.names top^MULTIPLY~45[12] top^MINUS~46^LOGICAL_NOT~84
+0 1
+
+.names top^MULTIPLY~45[13] top^MINUS~46^LOGICAL_NOT~87
+0 1
+
+.names top^MULTIPLY~45[14] top^MINUS~46^LOGICAL_NOT~90
+0 1
+
+.names top^MULTIPLY~45[15] top^MINUS~46^LOGICAL_NOT~93
+0 1
+
+.names top^MULTIPLY~45[16] top^MINUS~46^LOGICAL_NOT~96
+0 1
+
+.names top^MULTIPLY~45[17] top^MINUS~46^LOGICAL_NOT~99
+0 1
+
+.names top^MULTIPLY~45[18] top^MINUS~46^LOGICAL_NOT~102
+0 1
+
+.names top^MULTIPLY~45[19] top^MINUS~46^LOGICAL_NOT~105
+0 1
+
+.names top^MULTIPLY~45[20] top^MINUS~46^LOGICAL_NOT~108
+0 1
+
+.names top^MULTIPLY~45[21] top^MINUS~46^LOGICAL_NOT~111
+0 1
+
+.names top^MULTIPLY~45[22] top^MINUS~46^LOGICAL_NOT~114
+0 1
+
+.names top^MULTIPLY~45[23] top^MINUS~46^LOGICAL_NOT~117
+0 1
+
+.names top^MULTIPLY~45[24] top^MINUS~46^LOGICAL_NOT~120
+0 1
+
+.names top^MULTIPLY~45[25] top^MINUS~46^LOGICAL_NOT~123
+0 1
+
+.names top^MULTIPLY~45[26] top^MINUS~46^LOGICAL_NOT~126
+0 1
+
+.names top^MULTIPLY~45[27] top^MINUS~46^LOGICAL_NOT~129
+0 1
+
+.names top^MULTIPLY~45[28] top^MINUS~46^LOGICAL_NOT~132
+0 1
+
+.names top^MULTIPLY~45[29] top^MINUS~46^LOGICAL_NOT~135
+0 1
+
+.names top^MULTIPLY~45[30] top^MINUS~46^LOGICAL_NOT~138
+0 1
+
+.names top^MULTIPLY~45[31] top^MINUS~46^LOGICAL_NOT~141
+0 1
+
+.names top^yport~0_FF_NODE top^MULTIPLY~0[0] top^ADD~40^LOGICAL_AND~801
+11 1
+
+.names top^ADD~40^LOGICAL_AND~801 top^yport~1_FF_NODE top^MULTIPLY~0[1] top^ADD~40^ADDER_FUNC~802
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~802 top^yport~1_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~769
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~769 top^MULTI_PORT_MUX~33^MUX_2~673
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~673 top^yport~1_FF_NODE re top^clk 3
+
+.names top^ADD~40^LOGICAL_AND~801 top^yport~1_FF_NODE top^MULTIPLY~0[1] top^ADD~40^CARRY_FUNC~803
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~803 top^yport~2_FF_NODE top^MULTIPLY~0[2] top^ADD~40^ADDER_FUNC~804
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~804 top^yport~2_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~780
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~780 top^MULTI_PORT_MUX~33^MUX_2~684
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~684 top^yport~2_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~803 top^yport~2_FF_NODE top^MULTIPLY~0[2] top^ADD~40^CARRY_FUNC~805
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~805 top^yport~3_FF_NODE top^MULTIPLY~0[3] top^ADD~40^ADDER_FUNC~806
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~806 top^yport~3_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~791
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~791 top^MULTI_PORT_MUX~33^MUX_2~695
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~695 top^yport~3_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~805 top^yport~3_FF_NODE top^MULTIPLY~0[3] top^ADD~40^CARRY_FUNC~807
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~807 top^yport~4_FF_NODE top^MULTIPLY~0[4] top^ADD~40^ADDER_FUNC~808
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~808 top^yport~4_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~794
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~794 top^MULTI_PORT_MUX~33^MUX_2~698
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~698 top^yport~4_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~807 top^yport~4_FF_NODE top^MULTIPLY~0[4] top^ADD~40^CARRY_FUNC~809
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~809 top^yport~5_FF_NODE top^MULTIPLY~0[5] top^ADD~40^ADDER_FUNC~810
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~810 top^yport~5_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~795
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~795 top^MULTI_PORT_MUX~33^MUX_2~699
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~699 top^yport~5_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~809 top^yport~5_FF_NODE top^MULTIPLY~0[5] top^ADD~40^CARRY_FUNC~811
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~811 top^yport~6_FF_NODE top^MULTIPLY~0[6] top^ADD~40^ADDER_FUNC~812
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~812 top^yport~6_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~796
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~796 top^MULTI_PORT_MUX~33^MUX_2~700
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~700 top^yport~6_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~811 top^yport~6_FF_NODE top^MULTIPLY~0[6] top^ADD~40^CARRY_FUNC~813
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~813 top^yport~7_FF_NODE top^MULTIPLY~0[7] top^ADD~40^ADDER_FUNC~814
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~814 top^yport~7_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~797
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~797 top^MULTI_PORT_MUX~33^MUX_2~701
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~701 top^yport~7_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~813 top^yport~7_FF_NODE top^MULTIPLY~0[7] top^ADD~40^CARRY_FUNC~815
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~815 top^yport~8_FF_NODE top^MULTIPLY~0[8] top^ADD~40^ADDER_FUNC~816
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~816 top^yport~8_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~798
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~798 top^MULTI_PORT_MUX~33^MUX_2~702
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~702 top^yport~8_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~815 top^yport~8_FF_NODE top^MULTIPLY~0[8] top^ADD~40^CARRY_FUNC~817
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~817 top^yport~9_FF_NODE top^MULTIPLY~0[9] top^ADD~40^ADDER_FUNC~818
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~818 top^yport~9_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~799
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~799 top^MULTI_PORT_MUX~33^MUX_2~703
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~703 top^yport~9_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~817 top^yport~9_FF_NODE top^MULTIPLY~0[9] top^ADD~40^CARRY_FUNC~819
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~819 top^yport~10_FF_NODE top^MULTIPLY~0[10] top^ADD~40^ADDER_FUNC~820
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~820 top^yport~10_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~770
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~770 top^MULTI_PORT_MUX~33^MUX_2~674
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~674 top^yport~10_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~819 top^yport~10_FF_NODE top^MULTIPLY~0[10] top^ADD~40^CARRY_FUNC~821
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~821 top^yport~11_FF_NODE top^MULTIPLY~0[11] top^ADD~40^ADDER_FUNC~822
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~822 top^yport~11_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~771
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~771 top^MULTI_PORT_MUX~33^MUX_2~675
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~675 top^yport~11_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~821 top^yport~11_FF_NODE top^MULTIPLY~0[11] top^ADD~40^CARRY_FUNC~823
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~823 top^yport~12_FF_NODE top^MULTIPLY~0[12] top^ADD~40^ADDER_FUNC~824
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~824 top^yport~12_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~772
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~772 top^MULTI_PORT_MUX~33^MUX_2~676
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~676 top^yport~12_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~823 top^yport~12_FF_NODE top^MULTIPLY~0[12] top^ADD~40^CARRY_FUNC~825
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~825 top^yport~13_FF_NODE top^MULTIPLY~0[13] top^ADD~40^ADDER_FUNC~826
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~826 top^yport~13_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~773
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~773 top^MULTI_PORT_MUX~33^MUX_2~677
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~677 top^yport~13_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~825 top^yport~13_FF_NODE top^MULTIPLY~0[13] top^ADD~40^CARRY_FUNC~827
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~827 top^yport~14_FF_NODE top^MULTIPLY~0[14] top^ADD~40^ADDER_FUNC~828
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~828 top^yport~14_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~774
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~774 top^MULTI_PORT_MUX~33^MUX_2~678
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~678 top^yport~14_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~827 top^yport~14_FF_NODE top^MULTIPLY~0[14] top^ADD~40^CARRY_FUNC~829
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~829 top^yport~15_FF_NODE top^MULTIPLY~0[15] top^ADD~40^ADDER_FUNC~830
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~830 top^yport~15_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~775
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~775 top^MULTI_PORT_MUX~33^MUX_2~679
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~679 top^yport~15_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~829 top^yport~15_FF_NODE top^MULTIPLY~0[15] top^ADD~40^CARRY_FUNC~831
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~831 top^yport~16_FF_NODE top^MULTIPLY~0[16] top^ADD~40^ADDER_FUNC~832
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~832 top^yport~16_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~776
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~776 top^MULTI_PORT_MUX~33^MUX_2~680
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~680 top^yport~16_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~831 top^yport~16_FF_NODE top^MULTIPLY~0[16] top^ADD~40^CARRY_FUNC~833
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~833 top^yport~17_FF_NODE top^MULTIPLY~0[17] top^ADD~40^ADDER_FUNC~834
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~834 top^yport~17_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~777
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~777 top^MULTI_PORT_MUX~33^MUX_2~681
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~681 top^yport~17_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~833 top^yport~17_FF_NODE top^MULTIPLY~0[17] top^ADD~40^CARRY_FUNC~835
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~835 top^yport~18_FF_NODE top^MULTIPLY~0[18] top^ADD~40^ADDER_FUNC~836
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~836 top^yport~18_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~778
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~778 top^MULTI_PORT_MUX~33^MUX_2~682
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~682 top^yport~18_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~835 top^yport~18_FF_NODE top^MULTIPLY~0[18] top^ADD~40^CARRY_FUNC~837
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~837 top^yport~19_FF_NODE top^MULTIPLY~0[19] top^ADD~40^ADDER_FUNC~838
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~838 top^yport~19_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~779
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~779 top^MULTI_PORT_MUX~33^MUX_2~683
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~683 top^yport~19_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~837 top^yport~19_FF_NODE top^MULTIPLY~0[19] top^ADD~40^CARRY_FUNC~839
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~839 top^yport~20_FF_NODE top^MULTIPLY~0[20] top^ADD~40^ADDER_FUNC~840
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~840 top^yport~20_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~781
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~781 top^MULTI_PORT_MUX~33^MUX_2~685
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~685 top^yport~20_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~839 top^yport~20_FF_NODE top^MULTIPLY~0[20] top^ADD~40^CARRY_FUNC~841
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~841 top^yport~21_FF_NODE top^MULTIPLY~0[21] top^ADD~40^ADDER_FUNC~842
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~842 top^yport~21_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~782
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~782 top^MULTI_PORT_MUX~33^MUX_2~686
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~686 top^yport~21_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~841 top^yport~21_FF_NODE top^MULTIPLY~0[21] top^ADD~40^CARRY_FUNC~843
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~843 top^yport~22_FF_NODE top^MULTIPLY~0[22] top^ADD~40^ADDER_FUNC~844
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~844 top^yport~22_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~783
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~783 top^MULTI_PORT_MUX~33^MUX_2~687
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~687 top^yport~22_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~843 top^yport~22_FF_NODE top^MULTIPLY~0[22] top^ADD~40^CARRY_FUNC~845
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~845 top^yport~23_FF_NODE top^MULTIPLY~0[23] top^ADD~40^ADDER_FUNC~846
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~846 top^yport~23_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~784
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~784 top^MULTI_PORT_MUX~33^MUX_2~688
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~688 top^yport~23_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~845 top^yport~23_FF_NODE top^MULTIPLY~0[23] top^ADD~40^CARRY_FUNC~847
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~847 top^yport~24_FF_NODE top^MULTIPLY~0[24] top^ADD~40^ADDER_FUNC~848
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~848 top^yport~24_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~785
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~785 top^MULTI_PORT_MUX~33^MUX_2~689
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~689 top^yport~24_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~847 top^yport~24_FF_NODE top^MULTIPLY~0[24] top^ADD~40^CARRY_FUNC~849
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~849 top^yport~25_FF_NODE top^MULTIPLY~0[25] top^ADD~40^ADDER_FUNC~850
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~850 top^yport~25_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~786
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~786 top^MULTI_PORT_MUX~33^MUX_2~690
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~690 top^yport~25_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~849 top^yport~25_FF_NODE top^MULTIPLY~0[25] top^ADD~40^CARRY_FUNC~851
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~851 top^yport~26_FF_NODE top^MULTIPLY~0[26] top^ADD~40^ADDER_FUNC~852
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~852 top^yport~26_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~787
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~787 top^MULTI_PORT_MUX~33^MUX_2~691
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~691 top^yport~26_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~851 top^yport~26_FF_NODE top^MULTIPLY~0[26] top^ADD~40^CARRY_FUNC~853
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~853 top^yport~27_FF_NODE top^MULTIPLY~0[27] top^ADD~40^ADDER_FUNC~854
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~854 top^yport~27_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~788
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~788 top^MULTI_PORT_MUX~33^MUX_2~692
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~692 top^yport~27_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~853 top^yport~27_FF_NODE top^MULTIPLY~0[27] top^ADD~40^CARRY_FUNC~855
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~855 top^yport~28_FF_NODE top^MULTIPLY~0[28] top^ADD~40^ADDER_FUNC~856
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~856 top^yport~28_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~789
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~789 top^MULTI_PORT_MUX~33^MUX_2~693
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~693 top^yport~28_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~855 top^yport~28_FF_NODE top^MULTIPLY~0[28] top^ADD~40^CARRY_FUNC~857
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~857 top^yport~29_FF_NODE top^MULTIPLY~0[29] top^ADD~40^ADDER_FUNC~858
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~858 top^yport~29_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~790
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~790 top^MULTI_PORT_MUX~33^MUX_2~694
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~694 top^yport~29_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~857 top^yport~29_FF_NODE top^MULTIPLY~0[29] top^ADD~40^CARRY_FUNC~859
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~859 top^yport~30_FF_NODE top^MULTIPLY~0[30] top^ADD~40^ADDER_FUNC~860
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~860 top^yport~30_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~792
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~792 top^MULTI_PORT_MUX~33^MUX_2~696
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~696 top^yport~30_FF_NODE re top^clk 3
+
+.names top^ADD~40^CARRY_FUNC~859 top^yport~30_FF_NODE top^MULTIPLY~0[30] top^ADD~40^CARRY_FUNC~861
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~40^CARRY_FUNC~861 top^yport~31_FF_NODE top^MULTIPLY~0[31] top^ADD~40^ADDER_FUNC~862
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~40^ADDER_FUNC~862 top^yport~31_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~793
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~793 top^MULTI_PORT_MUX~33^MUX_2~697
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~697 top^yport~31_FF_NODE re top^clk 3
+
+
+.subckt multiply a[0]=top^MULTIPLY~0[0] a[1]=top^MULTIPLY~0[1]\
+ a[2]=top^MULTIPLY~0[2] a[3]=top^MULTIPLY~0[3] a[4]=top^MULTIPLY~0[4]\
+ a[5]=top^MULTIPLY~0[5] a[6]=top^MULTIPLY~0[6] a[7]=top^MULTIPLY~0[7]\
+ a[8]=top^MULTIPLY~0[8] a[9]=top^MULTIPLY~0[9] a[10]=top^MULTIPLY~0[10]\
+ a[11]=top^MULTIPLY~0[11] a[12]=top^MULTIPLY~0[12] a[13]=top^MULTIPLY~0[13]\
+ a[14]=top^MULTIPLY~0[14] a[15]=top^MULTIPLY~0[15] a[16]=top^MULTIPLY~0[16]\
+ a[17]=top^MULTIPLY~0[17] a[18]=top^MULTIPLY~0[18] a[19]=top^MULTIPLY~0[19]\
+ a[20]=top^MULTIPLY~0[20] a[21]=top^MULTIPLY~0[21] a[22]=top^MULTIPLY~0[22]\
+ a[23]=top^MULTIPLY~0[23] a[24]=top^MULTIPLY~0[24] a[25]=top^MULTIPLY~0[25]\
+ a[26]=top^MULTIPLY~0[26] a[27]=top^MULTIPLY~0[27] a[28]=top^MULTIPLY~0[28]\
+ a[29]=top^MULTIPLY~0[29] a[30]=top^MULTIPLY~0[30] a[31]=top^MULTIPLY~0[31]\
+ a[32]=unconn a[33]=unconn a[34]=unconn a[35]=unconn b[0]=top^MULTIPLY~41[0]\
+ b[1]=top^MULTIPLY~41[1] b[2]=top^MULTIPLY~41[2] b[3]=top^MULTIPLY~41[3]\
+ b[4]=top^MULTIPLY~41[4] b[5]=top^MULTIPLY~41[5] b[6]=top^MULTIPLY~41[6]\
+ b[7]=top^MULTIPLY~41[7] b[8]=top^MULTIPLY~41[8] b[9]=top^MULTIPLY~41[9]\
+ b[10]=top^MULTIPLY~41[10] b[11]=top^MULTIPLY~41[11] b[12]=top^MULTIPLY~41[12]\
+ b[13]=top^MULTIPLY~41[13] b[14]=top^MULTIPLY~41[14] b[15]=top^MULTIPLY~41[15]\
+ b[16]=top^MULTIPLY~41[16] b[17]=top^MULTIPLY~41[17] b[18]=top^MULTIPLY~41[18]\
+ b[19]=top^MULTIPLY~41[19] b[20]=top^MULTIPLY~41[20] b[21]=top^MULTIPLY~41[21]\
+ b[22]=top^MULTIPLY~41[22] b[23]=top^MULTIPLY~41[23] b[24]=top^MULTIPLY~41[24]\
+ b[25]=top^MULTIPLY~41[25] b[26]=top^MULTIPLY~41[26] b[27]=top^MULTIPLY~41[27]\
+ b[28]=top^MULTIPLY~41[28] b[29]=top^MULTIPLY~41[29] b[30]=top^MULTIPLY~41[30]\
+ b[31]=top^MULTIPLY~41[31] b[32]=top^MULTIPLY~41[32] b[33]=top^MULTIPLY~41[33]\
+ b[34]=top^MULTIPLY~41[34] b[35]=unconn out[0]=top^MULTIPLY~42[0]\
+ out[1]=top^MULTIPLY~42[1] out[2]=top^MULTIPLY~42[2] out[3]=top^MULTIPLY~42[3]\
+ out[4]=top^MULTIPLY~42[4] out[5]=top^MULTIPLY~42[5] out[6]=top^MULTIPLY~42[6]\
+ out[7]=top^MULTIPLY~42[7] out[8]=top^MULTIPLY~42[8] out[9]=top^MULTIPLY~42[9]\
+ out[10]=top^MULTIPLY~42[10] out[11]=top^MULTIPLY~42[11]\
+ out[12]=top^MULTIPLY~42[12] out[13]=top^MULTIPLY~42[13]\
+ out[14]=top^MULTIPLY~42[14] out[15]=top^MULTIPLY~42[15]\
+ out[16]=top^MULTIPLY~42[16] out[17]=top^MULTIPLY~42[17]\
+ out[18]=top^MULTIPLY~42[18] out[19]=top^MULTIPLY~42[19]\
+ out[20]=top^MULTIPLY~42[20] out[21]=top^MULTIPLY~42[21]\
+ out[22]=top^MULTIPLY~42[22] out[23]=top^MULTIPLY~42[23]\
+ out[24]=top^MULTIPLY~42[24] out[25]=top^MULTIPLY~42[25]\
+ out[26]=top^MULTIPLY~42[26] out[27]=top^MULTIPLY~42[27]\
+ out[28]=top^MULTIPLY~42[28] out[29]=top^MULTIPLY~42[29]\
+ out[30]=top^MULTIPLY~42[30] out[31]=top^MULTIPLY~42[31]\
+ out[32]=top^MULTIPLY~42[32] out[33]=top^MULTIPLY~42[33]\
+ out[34]=top^MULTIPLY~42[34] out[35]=top^MULTIPLY~42[35]\
+ out[36]=top^MULTIPLY~42[36] out[37]=top^MULTIPLY~42[37]\
+ out[38]=top^MULTIPLY~42[38] out[39]=top^MULTIPLY~42[39]\
+ out[40]=top^MULTIPLY~42[40] out[41]=top^MULTIPLY~42[41]\
+ out[42]=top^MULTIPLY~42[42] out[43]=top^MULTIPLY~42[43]\
+ out[44]=top^MULTIPLY~42[44] out[45]=top^MULTIPLY~42[45]\
+ out[46]=top^MULTIPLY~42[46] out[47]=top^MULTIPLY~42[47]\
+ out[48]=top^MULTIPLY~42[48] out[49]=top^MULTIPLY~42[49]\
+ out[50]=top^MULTIPLY~42[50] out[51]=top^MULTIPLY~42[51]\
+ out[52]=top^MULTIPLY~42[52] out[53]=top^MULTIPLY~42[53]\
+ out[54]=top^MULTIPLY~42[54] out[55]=top^MULTIPLY~42[55]\
+ out[56]=top^MULTIPLY~42[56] out[57]=top^MULTIPLY~42[57]\
+ out[58]=top^MULTIPLY~42[58] out[59]=top^MULTIPLY~42[59]\
+ out[60]=top^MULTIPLY~42[60] out[61]=top^MULTIPLY~42[61]\
+ out[62]=top^MULTIPLY~42[62] out[63]=top^MULTIPLY~42[63]\
+ out[64]=top^MULTIPLY~42[64] out[65]=top^MULTIPLY~42[65]\
+ out[66]=top^MULTIPLY~42[66] out[67]=top^MULTIPLY~42[67]\
+ out[68]=top^MULTIPLY~42[68] out[69]=top^MULTIPLY~42[69]\
+ out[70]=top^MULTIPLY~42[70] out[71]=top^MULTIPLY~42[71]
+
+.names top^MULTIPLY~42[0] top^MINUS~43^LOGICAL_NOT~247
+0 1
+
+.names top^uport~0_FF_NODE top^MINUS~43^LOGICAL_NOT~247 top^MINUS~43^LOGICAL_XNOR~246
+00 1
+11 1
+
+.names top^uport~0_FF_NODE top^MINUS~43^LOGICAL_NOT~247 top^MINUS~43^LOGICAL_OR~248
+1- 1
+-1 1
+
+.names top^MULTIPLY~42[1] top^MINUS~43^LOGICAL_NOT~250
+0 1
+
+.names top^MULTIPLY~42[2] top^MINUS~43^LOGICAL_NOT~253
+0 1
+
+.names top^MULTIPLY~42[3] top^MINUS~43^LOGICAL_NOT~256
+0 1
+
+.names top^MULTIPLY~42[4] top^MINUS~43^LOGICAL_NOT~259
+0 1
+
+.names top^MULTIPLY~42[5] top^MINUS~43^LOGICAL_NOT~262
+0 1
+
+.names top^MULTIPLY~42[6] top^MINUS~43^LOGICAL_NOT~265
+0 1
+
+.names top^MULTIPLY~42[7] top^MINUS~43^LOGICAL_NOT~268
+0 1
+
+.names top^MULTIPLY~42[8] top^MINUS~43^LOGICAL_NOT~271
+0 1
+
+.names top^MULTIPLY~42[9] top^MINUS~43^LOGICAL_NOT~274
+0 1
+
+.names top^MULTIPLY~42[10] top^MINUS~43^LOGICAL_NOT~277
+0 1
+
+.names top^MULTIPLY~42[11] top^MINUS~43^LOGICAL_NOT~280
+0 1
+
+.names top^MULTIPLY~42[12] top^MINUS~43^LOGICAL_NOT~283
+0 1
+
+.names top^MULTIPLY~42[13] top^MINUS~43^LOGICAL_NOT~286
+0 1
+
+.names top^MULTIPLY~42[14] top^MINUS~43^LOGICAL_NOT~289
+0 1
+
+.names top^MULTIPLY~42[15] top^MINUS~43^LOGICAL_NOT~292
+0 1
+
+.names top^MULTIPLY~42[16] top^MINUS~43^LOGICAL_NOT~295
+0 1
+
+.names top^MULTIPLY~42[17] top^MINUS~43^LOGICAL_NOT~298
+0 1
+
+.names top^MULTIPLY~42[18] top^MINUS~43^LOGICAL_NOT~301
+0 1
+
+.names top^MULTIPLY~42[19] top^MINUS~43^LOGICAL_NOT~304
+0 1
+
+.names top^MULTIPLY~42[20] top^MINUS~43^LOGICAL_NOT~307
+0 1
+
+.names top^MULTIPLY~42[21] top^MINUS~43^LOGICAL_NOT~310
+0 1
+
+.names top^MULTIPLY~42[22] top^MINUS~43^LOGICAL_NOT~313
+0 1
+
+.names top^MULTIPLY~42[23] top^MINUS~43^LOGICAL_NOT~316
+0 1
+
+.names top^MULTIPLY~42[24] top^MINUS~43^LOGICAL_NOT~319
+0 1
+
+.names top^MULTIPLY~42[25] top^MINUS~43^LOGICAL_NOT~322
+0 1
+
+.names top^MULTIPLY~42[26] top^MINUS~43^LOGICAL_NOT~325
+0 1
+
+.names top^MULTIPLY~42[27] top^MINUS~43^LOGICAL_NOT~328
+0 1
+
+.names top^MULTIPLY~42[28] top^MINUS~43^LOGICAL_NOT~331
+0 1
+
+.names top^MULTIPLY~42[29] top^MINUS~43^LOGICAL_NOT~334
+0 1
+
+.names top^MULTIPLY~42[30] top^MINUS~43^LOGICAL_NOT~337
+0 1
+
+.names top^MULTIPLY~42[31] top^MINUS~43^LOGICAL_NOT~340
+0 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38
+0 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^LOGICAL_XOR~542 top^xport~0_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~736
+1-1- 1
+-1-1 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~544 top^xport~1_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~737
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~737 top^MULTI_PORT_MUX~33^MUX_2~641
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~641 top^xport~1_FF_NODE re top^clk 3
+
+.names top^aport~1 top^xport~1_FF_NODE top^LT~37^LOGICAL_OR~451 top^LT~37^GT~450
+100 1
+
+.names top^ADD~39^LOGICAL_AND~543 top^xport~1_FF_NODE top^dxport~1 top^ADD~39^ADDER_FUNC~544
+001 1
+010 1
+100 1
+111 1
+
+
+.subckt multiply a[0]=vcc a[1]=gnd a[2]=vcc a[3]=unconn a[4]=unconn\
+ a[5]=unconn a[6]=unconn a[7]=unconn a[8]=unconn a[9]=unconn a[10]=unconn\
+ a[11]=unconn a[12]=unconn a[13]=unconn a[14]=unconn a[15]=unconn a[16]=unconn\
+ a[17]=unconn a[18]=unconn a[19]=unconn a[20]=unconn a[21]=unconn a[22]=unconn\
+ a[23]=unconn a[24]=unconn a[25]=unconn a[26]=unconn a[27]=unconn a[28]=unconn\
+ a[29]=unconn a[30]=unconn a[31]=unconn a[32]=unconn a[33]=unconn a[34]=unconn\
+ a[35]=unconn b[0]=top^xport~0_FF_NODE b[1]=top^xport~1_FF_NODE\
+ b[2]=top^xport~2_FF_NODE b[3]=top^xport~3_FF_NODE b[4]=top^xport~4_FF_NODE\
+ b[5]=top^xport~5_FF_NODE b[6]=top^xport~6_FF_NODE b[7]=top^xport~7_FF_NODE\
+ b[8]=top^xport~8_FF_NODE b[9]=top^xport~9_FF_NODE b[10]=top^xport~10_FF_NODE\
+ b[11]=top^xport~11_FF_NODE b[12]=top^xport~12_FF_NODE\
+ b[13]=top^xport~13_FF_NODE b[14]=top^xport~14_FF_NODE\
+ b[15]=top^xport~15_FF_NODE b[16]=top^xport~16_FF_NODE\
+ b[17]=top^xport~17_FF_NODE b[18]=top^xport~18_FF_NODE\
+ b[19]=top^xport~19_FF_NODE b[20]=top^xport~20_FF_NODE\
+ b[21]=top^xport~21_FF_NODE b[22]=top^xport~22_FF_NODE\
+ b[23]=top^xport~23_FF_NODE b[24]=top^xport~24_FF_NODE\
+ b[25]=top^xport~25_FF_NODE b[26]=top^xport~26_FF_NODE\
+ b[27]=top^xport~27_FF_NODE b[28]=top^xport~28_FF_NODE\
+ b[29]=top^xport~29_FF_NODE b[30]=top^xport~30_FF_NODE\
+ b[31]=top^xport~31_FF_NODE b[32]=unconn b[33]=unconn b[34]=unconn\
+ b[35]=unconn out[0]=top^MULTIPLY~41[0] out[1]=top^MULTIPLY~41[1]\
+ out[2]=top^MULTIPLY~41[2] out[3]=top^MULTIPLY~41[3] out[4]=top^MULTIPLY~41[4]\
+ out[5]=top^MULTIPLY~41[5] out[6]=top^MULTIPLY~41[6] out[7]=top^MULTIPLY~41[7]\
+ out[8]=top^MULTIPLY~41[8] out[9]=top^MULTIPLY~41[9]\
+ out[10]=top^MULTIPLY~41[10] out[11]=top^MULTIPLY~41[11]\
+ out[12]=top^MULTIPLY~41[12] out[13]=top^MULTIPLY~41[13]\
+ out[14]=top^MULTIPLY~41[14] out[15]=top^MULTIPLY~41[15]\
+ out[16]=top^MULTIPLY~41[16] out[17]=top^MULTIPLY~41[17]\
+ out[18]=top^MULTIPLY~41[18] out[19]=top^MULTIPLY~41[19]\
+ out[20]=top^MULTIPLY~41[20] out[21]=top^MULTIPLY~41[21]\
+ out[22]=top^MULTIPLY~41[22] out[23]=top^MULTIPLY~41[23]\
+ out[24]=top^MULTIPLY~41[24] out[25]=top^MULTIPLY~41[25]\
+ out[26]=top^MULTIPLY~41[26] out[27]=top^MULTIPLY~41[27]\
+ out[28]=top^MULTIPLY~41[28] out[29]=top^MULTIPLY~41[29]\
+ out[30]=top^MULTIPLY~41[30] out[31]=top^MULTIPLY~41[31]\
+ out[32]=top^MULTIPLY~41[32] out[33]=top^MULTIPLY~41[33]\
+ out[34]=top^MULTIPLY~41[34] out[35]=top^MULTIPLY~41[35]\
+ out[36]=top^MULTIPLY~41[36] out[37]=top^MULTIPLY~41[37]\
+ out[38]=top^MULTIPLY~41[38] out[39]=top^MULTIPLY~41[39]\
+ out[40]=top^MULTIPLY~41[40] out[41]=top^MULTIPLY~41[41]\
+ out[42]=top^MULTIPLY~41[42] out[43]=top^MULTIPLY~41[43]\
+ out[44]=top^MULTIPLY~41[44] out[45]=top^MULTIPLY~41[45]\
+ out[46]=top^MULTIPLY~41[46] out[47]=top^MULTIPLY~41[47]\
+ out[48]=top^MULTIPLY~41[48] out[49]=top^MULTIPLY~41[49]\
+ out[50]=top^MULTIPLY~41[50] out[51]=top^MULTIPLY~41[51]\
+ out[52]=top^MULTIPLY~41[52] out[53]=top^MULTIPLY~41[53]\
+ out[54]=top^MULTIPLY~41[54] out[55]=top^MULTIPLY~41[55]\
+ out[56]=top^MULTIPLY~41[56] out[57]=top^MULTIPLY~41[57]\
+ out[58]=top^MULTIPLY~41[58] out[59]=top^MULTIPLY~41[59]\
+ out[60]=top^MULTIPLY~41[60] out[61]=top^MULTIPLY~41[61]\
+ out[62]=top^MULTIPLY~41[62] out[63]=top^MULTIPLY~41[63]\
+ out[64]=top^MULTIPLY~41[64] out[65]=top^MULTIPLY~41[65]\
+ out[66]=top^MULTIPLY~41[66] out[67]=top^MULTIPLY~41[67]\
+ out[68]=top^MULTIPLY~41[68] out[69]=top^MULTIPLY~41[69]\
+ out[70]=top^MULTIPLY~41[70] out[71]=top^MULTIPLY~41[71]
+
+.names top^xport~1_FF_NODE top^aport~1 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~511
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~511 top^LT~37^LOGICAL_OR~451 top^LT~37^LOGICAL_OR~449
+1- 1
+-1 1
+
+.names top^ADD~39^LOGICAL_AND~543 top^xport~1_FF_NODE top^dxport~1 top^ADD~39^CARRY_FUNC~545
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~545 top^xport~2_FF_NODE top^dxport~2 top^ADD~39^ADDER_FUNC~546
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~546 top^xport~2_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~748
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~748 top^MULTI_PORT_MUX~33^MUX_2~652
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~652 top^xport~2_FF_NODE re top^clk 3
+
+.names top^aport~2 top^xport~2_FF_NODE top^LT~37^LOGICAL_OR~453 top^LT~37^GT~452
+100 1
+
+.names top^xport~2_FF_NODE top^aport~2 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~512
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~512 top^LT~37^LOGICAL_OR~453 top^LT~37^LOGICAL_OR~451
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~545 top^xport~2_FF_NODE top^dxport~2 top^ADD~39^CARRY_FUNC~547
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~547 top^xport~3_FF_NODE top^dxport~3 top^ADD~39^ADDER_FUNC~548
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~548 top^xport~3_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~759
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~759 top^MULTI_PORT_MUX~33^MUX_2~663
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~663 top^xport~3_FF_NODE re top^clk 3
+
+.names top^aport~3 top^xport~3_FF_NODE top^LT~37^LOGICAL_OR~455 top^LT~37^GT~454
+100 1
+
+.names top^xport~3_FF_NODE top^aport~3 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~513
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~513 top^LT~37^LOGICAL_OR~455 top^LT~37^LOGICAL_OR~453
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~547 top^xport~3_FF_NODE top^dxport~3 top^ADD~39^CARRY_FUNC~549
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~549 top^xport~4_FF_NODE top^dxport~4 top^ADD~39^ADDER_FUNC~550
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~550 top^xport~4_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~762
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~762 top^MULTI_PORT_MUX~33^MUX_2~666
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~666 top^xport~4_FF_NODE re top^clk 3
+
+.names top^aport~4 top^xport~4_FF_NODE top^LT~37^LOGICAL_OR~457 top^LT~37^GT~456
+100 1
+
+.names top^xport~4_FF_NODE top^aport~4 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~514
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~514 top^LT~37^LOGICAL_OR~457 top^LT~37^LOGICAL_OR~455
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~549 top^xport~4_FF_NODE top^dxport~4 top^ADD~39^CARRY_FUNC~551
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~551 top^xport~5_FF_NODE top^dxport~5 top^ADD~39^ADDER_FUNC~552
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~552 top^xport~5_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~763
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~763 top^MULTI_PORT_MUX~33^MUX_2~667
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~667 top^xport~5_FF_NODE re top^clk 3
+
+.names top^aport~5 top^xport~5_FF_NODE top^LT~37^LOGICAL_OR~459 top^LT~37^GT~458
+100 1
+
+.names top^xport~5_FF_NODE top^aport~5 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~515
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~515 top^LT~37^LOGICAL_OR~459 top^LT~37^LOGICAL_OR~457
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~551 top^xport~5_FF_NODE top^dxport~5 top^ADD~39^CARRY_FUNC~553
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~553 top^xport~6_FF_NODE top^dxport~6 top^ADD~39^ADDER_FUNC~554
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~554 top^xport~6_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~764
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~764 top^MULTI_PORT_MUX~33^MUX_2~668
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~668 top^xport~6_FF_NODE re top^clk 3
+
+.names top^aport~6 top^xport~6_FF_NODE top^LT~37^LOGICAL_OR~461 top^LT~37^GT~460
+100 1
+
+.names top^xport~6_FF_NODE top^aport~6 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~516
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~516 top^LT~37^LOGICAL_OR~461 top^LT~37^LOGICAL_OR~459
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~553 top^xport~6_FF_NODE top^dxport~6 top^ADD~39^CARRY_FUNC~555
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~555 top^xport~7_FF_NODE top^dxport~7 top^ADD~39^ADDER_FUNC~556
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~556 top^xport~7_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~765
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~765 top^MULTI_PORT_MUX~33^MUX_2~669
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~669 top^xport~7_FF_NODE re top^clk 3
+
+.names top^aport~7 top^xport~7_FF_NODE top^LT~37^LOGICAL_OR~463 top^LT~37^GT~462
+100 1
+
+.names top^xport~7_FF_NODE top^aport~7 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~517
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~517 top^LT~37^LOGICAL_OR~463 top^LT~37^LOGICAL_OR~461
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~555 top^xport~7_FF_NODE top^dxport~7 top^ADD~39^CARRY_FUNC~557
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~557 top^xport~8_FF_NODE top^dxport~8 top^ADD~39^ADDER_FUNC~558
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~558 top^xport~8_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~766
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~766 top^MULTI_PORT_MUX~33^MUX_2~670
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~670 top^xport~8_FF_NODE re top^clk 3
+
+.names top^aport~8 top^xport~8_FF_NODE top^LT~37^LOGICAL_OR~465 top^LT~37^GT~464
+100 1
+
+.names top^xport~8_FF_NODE top^aport~8 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~518
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~518 top^LT~37^LOGICAL_OR~465 top^LT~37^LOGICAL_OR~463
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~557 top^xport~8_FF_NODE top^dxport~8 top^ADD~39^CARRY_FUNC~559
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~559 top^xport~9_FF_NODE top^dxport~9 top^ADD~39^ADDER_FUNC~560
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~560 top^xport~9_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~767
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~767 top^MULTI_PORT_MUX~33^MUX_2~671
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~671 top^xport~9_FF_NODE re top^clk 3
+
+.names top^aport~9 top^xport~9_FF_NODE top^LT~37^LOGICAL_OR~467 top^LT~37^GT~466
+100 1
+
+.names top^xport~9_FF_NODE top^aport~9 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~519
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~519 top^LT~37^LOGICAL_OR~467 top^LT~37^LOGICAL_OR~465
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~559 top^xport~9_FF_NODE top^dxport~9 top^ADD~39^CARRY_FUNC~561
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~561 top^xport~10_FF_NODE top^dxport~10 top^ADD~39^ADDER_FUNC~562
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~562 top^xport~10_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~738
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~738 top^MULTI_PORT_MUX~33^MUX_2~642
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~642 top^xport~10_FF_NODE re top^clk 3
+
+.names top^aport~10 top^xport~10_FF_NODE top^LT~37^LOGICAL_OR~469 top^LT~37^GT~468
+100 1
+
+.names top^xport~10_FF_NODE top^aport~10 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~520
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~520 top^LT~37^LOGICAL_OR~469 top^LT~37^LOGICAL_OR~467
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~561 top^xport~10_FF_NODE top^dxport~10 top^ADD~39^CARRY_FUNC~563
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~563 top^xport~11_FF_NODE top^dxport~11 top^ADD~39^ADDER_FUNC~564
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~564 top^xport~11_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~739
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~739 top^MULTI_PORT_MUX~33^MUX_2~643
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~643 top^xport~11_FF_NODE re top^clk 3
+
+.names top^aport~11 top^xport~11_FF_NODE top^LT~37^LOGICAL_OR~471 top^LT~37^GT~470
+100 1
+
+.names top^xport~11_FF_NODE top^aport~11 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~521
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~521 top^LT~37^LOGICAL_OR~471 top^LT~37^LOGICAL_OR~469
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~563 top^xport~11_FF_NODE top^dxport~11 top^ADD~39^CARRY_FUNC~565
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~565 top^xport~12_FF_NODE top^dxport~12 top^ADD~39^ADDER_FUNC~566
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~566 top^xport~12_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~740
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~740 top^MULTI_PORT_MUX~33^MUX_2~644
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~644 top^xport~12_FF_NODE re top^clk 3
+
+.names top^aport~12 top^xport~12_FF_NODE top^LT~37^LOGICAL_OR~473 top^LT~37^GT~472
+100 1
+
+.names top^xport~12_FF_NODE top^aport~12 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~522
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~522 top^LT~37^LOGICAL_OR~473 top^LT~37^LOGICAL_OR~471
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~565 top^xport~12_FF_NODE top^dxport~12 top^ADD~39^CARRY_FUNC~567
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~567 top^xport~13_FF_NODE top^dxport~13 top^ADD~39^ADDER_FUNC~568
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~568 top^xport~13_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~741
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~741 top^MULTI_PORT_MUX~33^MUX_2~645
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~645 top^xport~13_FF_NODE re top^clk 3
+
+.names top^aport~13 top^xport~13_FF_NODE top^LT~37^LOGICAL_OR~475 top^LT~37^GT~474
+100 1
+
+.names top^xport~13_FF_NODE top^aport~13 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~523
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~523 top^LT~37^LOGICAL_OR~475 top^LT~37^LOGICAL_OR~473
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~567 top^xport~13_FF_NODE top^dxport~13 top^ADD~39^CARRY_FUNC~569
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~569 top^xport~14_FF_NODE top^dxport~14 top^ADD~39^ADDER_FUNC~570
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~570 top^xport~14_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~742
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~742 top^MULTI_PORT_MUX~33^MUX_2~646
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~646 top^xport~14_FF_NODE re top^clk 3
+
+.names top^aport~14 top^xport~14_FF_NODE top^LT~37^LOGICAL_OR~477 top^LT~37^GT~476
+100 1
+
+.names top^xport~14_FF_NODE top^aport~14 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~524
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~524 top^LT~37^LOGICAL_OR~477 top^LT~37^LOGICAL_OR~475
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~569 top^xport~14_FF_NODE top^dxport~14 top^ADD~39^CARRY_FUNC~571
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~571 top^xport~15_FF_NODE top^dxport~15 top^ADD~39^ADDER_FUNC~572
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~572 top^xport~15_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~743
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~743 top^MULTI_PORT_MUX~33^MUX_2~647
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~647 top^xport~15_FF_NODE re top^clk 3
+
+.names top^aport~15 top^xport~15_FF_NODE top^LT~37^LOGICAL_OR~479 top^LT~37^GT~478
+100 1
+
+.names top^xport~15_FF_NODE top^aport~15 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~525
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~525 top^LT~37^LOGICAL_OR~479 top^LT~37^LOGICAL_OR~477
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~571 top^xport~15_FF_NODE top^dxport~15 top^ADD~39^CARRY_FUNC~573
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~573 top^xport~16_FF_NODE top^dxport~16 top^ADD~39^ADDER_FUNC~574
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~574 top^xport~16_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~744
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~744 top^MULTI_PORT_MUX~33^MUX_2~648
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~648 top^xport~16_FF_NODE re top^clk 3
+
+.names top^aport~16 top^xport~16_FF_NODE top^LT~37^LOGICAL_OR~481 top^LT~37^GT~480
+100 1
+
+.names top^xport~16_FF_NODE top^aport~16 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~526
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~526 top^LT~37^LOGICAL_OR~481 top^LT~37^LOGICAL_OR~479
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~573 top^xport~16_FF_NODE top^dxport~16 top^ADD~39^CARRY_FUNC~575
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~575 top^xport~17_FF_NODE top^dxport~17 top^ADD~39^ADDER_FUNC~576
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~576 top^xport~17_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~745
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~745 top^MULTI_PORT_MUX~33^MUX_2~649
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~649 top^xport~17_FF_NODE re top^clk 3
+
+.names top^aport~17 top^xport~17_FF_NODE top^LT~37^LOGICAL_OR~483 top^LT~37^GT~482
+100 1
+
+.names top^xport~17_FF_NODE top^aport~17 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~527
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~527 top^LT~37^LOGICAL_OR~483 top^LT~37^LOGICAL_OR~481
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~575 top^xport~17_FF_NODE top^dxport~17 top^ADD~39^CARRY_FUNC~577
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~577 top^xport~18_FF_NODE top^dxport~18 top^ADD~39^ADDER_FUNC~578
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~578 top^xport~18_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~746
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~746 top^MULTI_PORT_MUX~33^MUX_2~650
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~650 top^xport~18_FF_NODE re top^clk 3
+
+.names top^aport~18 top^xport~18_FF_NODE top^LT~37^LOGICAL_OR~485 top^LT~37^GT~484
+100 1
+
+.names top^xport~18_FF_NODE top^aport~18 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~528
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~528 top^LT~37^LOGICAL_OR~485 top^LT~37^LOGICAL_OR~483
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~577 top^xport~18_FF_NODE top^dxport~18 top^ADD~39^CARRY_FUNC~579
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~579 top^xport~19_FF_NODE top^dxport~19 top^ADD~39^ADDER_FUNC~580
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~580 top^xport~19_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~747
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~747 top^MULTI_PORT_MUX~33^MUX_2~651
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~651 top^xport~19_FF_NODE re top^clk 3
+
+.names top^aport~19 top^xport~19_FF_NODE top^LT~37^LOGICAL_OR~487 top^LT~37^GT~486
+100 1
+
+.names top^xport~19_FF_NODE top^aport~19 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~529
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~529 top^LT~37^LOGICAL_OR~487 top^LT~37^LOGICAL_OR~485
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~579 top^xport~19_FF_NODE top^dxport~19 top^ADD~39^CARRY_FUNC~581
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~581 top^xport~20_FF_NODE top^dxport~20 top^ADD~39^ADDER_FUNC~582
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~582 top^xport~20_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~749
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~749 top^MULTI_PORT_MUX~33^MUX_2~653
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~653 top^xport~20_FF_NODE re top^clk 3
+
+.names top^aport~20 top^xport~20_FF_NODE top^LT~37^LOGICAL_OR~489 top^LT~37^GT~488
+100 1
+
+.names top^xport~20_FF_NODE top^aport~20 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~530
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~530 top^LT~37^LOGICAL_OR~489 top^LT~37^LOGICAL_OR~487
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~581 top^xport~20_FF_NODE top^dxport~20 top^ADD~39^CARRY_FUNC~583
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~583 top^xport~21_FF_NODE top^dxport~21 top^ADD~39^ADDER_FUNC~584
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~584 top^xport~21_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~750
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~750 top^MULTI_PORT_MUX~33^MUX_2~654
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~654 top^xport~21_FF_NODE re top^clk 3
+
+.names top^aport~21 top^xport~21_FF_NODE top^LT~37^LOGICAL_OR~491 top^LT~37^GT~490
+100 1
+
+.names top^xport~21_FF_NODE top^aport~21 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~531
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~531 top^LT~37^LOGICAL_OR~491 top^LT~37^LOGICAL_OR~489
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~583 top^xport~21_FF_NODE top^dxport~21 top^ADD~39^CARRY_FUNC~585
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~585 top^xport~22_FF_NODE top^dxport~22 top^ADD~39^ADDER_FUNC~586
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~586 top^xport~22_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~751
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~751 top^MULTI_PORT_MUX~33^MUX_2~655
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~655 top^xport~22_FF_NODE re top^clk 3
+
+.names top^aport~22 top^xport~22_FF_NODE top^LT~37^LOGICAL_OR~493 top^LT~37^GT~492
+100 1
+
+.names top^xport~22_FF_NODE top^aport~22 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~532
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~532 top^LT~37^LOGICAL_OR~493 top^LT~37^LOGICAL_OR~491
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~585 top^xport~22_FF_NODE top^dxport~22 top^ADD~39^CARRY_FUNC~587
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~587 top^xport~23_FF_NODE top^dxport~23 top^ADD~39^ADDER_FUNC~588
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~588 top^xport~23_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~752
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~752 top^MULTI_PORT_MUX~33^MUX_2~656
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~656 top^xport~23_FF_NODE re top^clk 3
+
+.names top^aport~23 top^xport~23_FF_NODE top^LT~37^LOGICAL_OR~495 top^LT~37^GT~494
+100 1
+
+.names top^xport~23_FF_NODE top^aport~23 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~533
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~533 top^LT~37^LOGICAL_OR~495 top^LT~37^LOGICAL_OR~493
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~587 top^xport~23_FF_NODE top^dxport~23 top^ADD~39^CARRY_FUNC~589
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~589 top^xport~24_FF_NODE top^dxport~24 top^ADD~39^ADDER_FUNC~590
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~590 top^xport~24_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~753
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~753 top^MULTI_PORT_MUX~33^MUX_2~657
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~657 top^xport~24_FF_NODE re top^clk 3
+
+.names top^aport~24 top^xport~24_FF_NODE top^LT~37^LOGICAL_OR~497 top^LT~37^GT~496
+100 1
+
+.names top^xport~24_FF_NODE top^aport~24 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~534
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~534 top^LT~37^LOGICAL_OR~497 top^LT~37^LOGICAL_OR~495
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~589 top^xport~24_FF_NODE top^dxport~24 top^ADD~39^CARRY_FUNC~591
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~591 top^xport~25_FF_NODE top^dxport~25 top^ADD~39^ADDER_FUNC~592
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~592 top^xport~25_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~754
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~754 top^MULTI_PORT_MUX~33^MUX_2~658
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~658 top^xport~25_FF_NODE re top^clk 3
+
+.names top^aport~25 top^xport~25_FF_NODE top^LT~37^LOGICAL_OR~499 top^LT~37^GT~498
+100 1
+
+.names top^xport~25_FF_NODE top^aport~25 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~535
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~535 top^LT~37^LOGICAL_OR~499 top^LT~37^LOGICAL_OR~497
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~591 top^xport~25_FF_NODE top^dxport~25 top^ADD~39^CARRY_FUNC~593
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~593 top^xport~26_FF_NODE top^dxport~26 top^ADD~39^ADDER_FUNC~594
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~594 top^xport~26_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~755
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~755 top^MULTI_PORT_MUX~33^MUX_2~659
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~659 top^xport~26_FF_NODE re top^clk 3
+
+.names top^aport~26 top^xport~26_FF_NODE top^LT~37^LOGICAL_OR~501 top^LT~37^GT~500
+100 1
+
+.names top^xport~26_FF_NODE top^aport~26 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~536
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~536 top^LT~37^LOGICAL_OR~501 top^LT~37^LOGICAL_OR~499
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~593 top^xport~26_FF_NODE top^dxport~26 top^ADD~39^CARRY_FUNC~595
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~595 top^xport~27_FF_NODE top^dxport~27 top^ADD~39^ADDER_FUNC~596
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~596 top^xport~27_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~756
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~756 top^MULTI_PORT_MUX~33^MUX_2~660
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~660 top^xport~27_FF_NODE re top^clk 3
+
+.names top^aport~27 top^xport~27_FF_NODE top^LT~37^LOGICAL_OR~503 top^LT~37^GT~502
+100 1
+
+.names top^xport~27_FF_NODE top^aport~27 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~537
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~537 top^LT~37^LOGICAL_OR~503 top^LT~37^LOGICAL_OR~501
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~595 top^xport~27_FF_NODE top^dxport~27 top^ADD~39^CARRY_FUNC~597
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~597 top^xport~28_FF_NODE top^dxport~28 top^ADD~39^ADDER_FUNC~598
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~598 top^xport~28_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~757
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~757 top^MULTI_PORT_MUX~33^MUX_2~661
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~661 top^xport~28_FF_NODE re top^clk 3
+
+.names top^aport~28 top^xport~28_FF_NODE top^LT~37^LOGICAL_OR~505 top^LT~37^GT~504
+100 1
+
+.names top^xport~28_FF_NODE top^aport~28 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~538
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~538 top^LT~37^LOGICAL_OR~505 top^LT~37^LOGICAL_OR~503
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~597 top^xport~28_FF_NODE top^dxport~28 top^ADD~39^CARRY_FUNC~599
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~599 top^xport~29_FF_NODE top^dxport~29 top^ADD~39^ADDER_FUNC~600
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~600 top^xport~29_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~758
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~758 top^MULTI_PORT_MUX~33^MUX_2~662
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~662 top^xport~29_FF_NODE re top^clk 3
+
+.names top^aport~29 top^xport~29_FF_NODE top^LT~37^LOGICAL_OR~507 top^LT~37^GT~506
+100 1
+
+.names top^xport~29_FF_NODE top^aport~29 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~539
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~539 top^LT~37^LOGICAL_OR~507 top^LT~37^LOGICAL_OR~505
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~599 top^xport~29_FF_NODE top^dxport~29 top^ADD~39^CARRY_FUNC~601
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~601 top^xport~30_FF_NODE top^dxport~30 top^ADD~39^ADDER_FUNC~602
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~602 top^xport~30_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~760
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~760 top^MULTI_PORT_MUX~33^MUX_2~664
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~664 top^xport~30_FF_NODE re top^clk 3
+
+.names top^aport~30 top^xport~30_FF_NODE top^LT~37^LOGICAL_OR~509 top^LT~37^GT~508
+100 1
+
+.names top^xport~30_FF_NODE top^aport~30 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~540
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~540 top^LT~37^LOGICAL_OR~509 top^LT~37^LOGICAL_OR~507
+1- 1
+-1 1
+
+.names top^ADD~39^CARRY_FUNC~601 top^xport~30_FF_NODE top^dxport~30 top^ADD~39^CARRY_FUNC~603
+011 1
+101 1
+110 1
+111 1
+
+.names top^ADD~39^CARRY_FUNC~603 top^xport~31_FF_NODE top^dxport~31 top^ADD~39^ADDER_FUNC~604
+001 1
+010 1
+100 1
+111 1
+
+.names top^LT~37^LOGICAL_OR~447 top^MULTI_PORT_MUX~36^LOGICAL_NOT~38 top^ADD~39^ADDER_FUNC~604 top^xport~31_FF_NODE top^MULTI_PORT_MUX~36^MUX_2~761
+1-1- 1
+-1-1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35 gnd top^MULTI_PORT_MUX~36^MUX_2~761 top^MULTI_PORT_MUX~33^MUX_2~665
+1-1- 1
+-1-1 1
+
+.latch top^MULTI_PORT_MUX~33^MUX_2~665 top^xport~31_FF_NODE re top^clk 3
+
+.names top^aport~31 top^xport~31_FF_NODE gnd top^LT~37^GT~510
+100 1
+
+.names top^xport~31_FF_NODE top^aport~31 top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~541
+01 1
+10 1
+
+.names top^LT~37^LOGICAL_XOR~446^LOGICAL_XOR~541 gnd top^LT~37^LOGICAL_OR~509
+1- 1
+-1 1
+
+.names top^xport~0_FF_NODE top^dxport~0 top^ADD~39^LOGICAL_XOR~542
+01 1
+10 1
+
+.names top^xport~0_FF_NODE top^dxport~0 top^ADD~39^LOGICAL_AND~543
+11 1
+
+.names top^reset vcc top^LOGICAL_EQUAL~34^LOGICAL_XNOR~866^LOGICAL_XNOR~868
+00 1
+11 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_XNOR~866^LOGICAL_XNOR~868 top^LOGICAL_EQUAL~34^LOGICAL_AND~867
+1 1
+
+.names top^LOGICAL_EQUAL~34^LOGICAL_AND~867 top^MULTI_PORT_MUX~33^LOGICAL_NOT~35
+0 1
+
+.names top^xport~0_FF_NODE top^xport~0
+1 1
+
+.names top^xport~1_FF_NODE top^xport~1
+1 1
+
+.names top^xport~2_FF_NODE top^xport~2
+1 1
+
+.names top^xport~3_FF_NODE top^xport~3
+1 1
+
+.names top^xport~4_FF_NODE top^xport~4
+1 1
+
+.names top^xport~5_FF_NODE top^xport~5
+1 1
+
+.names top^xport~6_FF_NODE top^xport~6
+1 1
+
+.names top^xport~7_FF_NODE top^xport~7
+1 1
+
+.names top^xport~8_FF_NODE top^xport~8
+1 1
+
+.names top^xport~9_FF_NODE top^xport~9
+1 1
+
+.names top^xport~10_FF_NODE top^xport~10
+1 1
+
+.names top^xport~11_FF_NODE top^xport~11
+1 1
+
+.names top^xport~12_FF_NODE top^xport~12
+1 1
+
+.names top^xport~13_FF_NODE top^xport~13
+1 1
+
+.names top^xport~14_FF_NODE top^xport~14
+1 1
+
+.names top^xport~15_FF_NODE top^xport~15
+1 1
+
+.names top^xport~16_FF_NODE top^xport~16
+1 1
+
+.names top^xport~17_FF_NODE top^xport~17
+1 1
+
+.names top^xport~18_FF_NODE top^xport~18
+1 1
+
+.names top^xport~19_FF_NODE top^xport~19
+1 1
+
+.names top^xport~20_FF_NODE top^xport~20
+1 1
+
+.names top^xport~21_FF_NODE top^xport~21
+1 1
+
+.names top^xport~22_FF_NODE top^xport~22
+1 1
+
+.names top^xport~23_FF_NODE top^xport~23
+1 1
+
+.names top^xport~24_FF_NODE top^xport~24
+1 1
+
+.names top^xport~25_FF_NODE top^xport~25
+1 1
+
+.names top^xport~26_FF_NODE top^xport~26
+1 1
+
+.names top^xport~27_FF_NODE top^xport~27
+1 1
+
+.names top^xport~28_FF_NODE top^xport~28
+1 1
+
+.names top^xport~29_FF_NODE top^xport~29
+1 1
+
+.names top^xport~30_FF_NODE top^xport~30
+1 1
+
+.names top^xport~31_FF_NODE top^xport~31
+1 1
+
+.names top^yport~0_FF_NODE top^yport~0
+1 1
+
+.names top^yport~1_FF_NODE top^yport~1
+1 1
+
+.names top^yport~2_FF_NODE top^yport~2
+1 1
+
+.names top^yport~3_FF_NODE top^yport~3
+1 1
+
+.names top^yport~4_FF_NODE top^yport~4
+1 1
+
+.names top^yport~5_FF_NODE top^yport~5
+1 1
+
+.names top^yport~6_FF_NODE top^yport~6
+1 1
+
+.names top^yport~7_FF_NODE top^yport~7
+1 1
+
+.names top^yport~8_FF_NODE top^yport~8
+1 1
+
+.names top^yport~9_FF_NODE top^yport~9
+1 1
+
+.names top^yport~10_FF_NODE top^yport~10
+1 1
+
+.names top^yport~11_FF_NODE top^yport~11
+1 1
+
+.names top^yport~12_FF_NODE top^yport~12
+1 1
+
+.names top^yport~13_FF_NODE top^yport~13
+1 1
+
+.names top^yport~14_FF_NODE top^yport~14
+1 1
+
+.names top^yport~15_FF_NODE top^yport~15
+1 1
+
+.names top^yport~16_FF_NODE top^yport~16
+1 1
+
+.names top^yport~17_FF_NODE top^yport~17
+1 1
+
+.names top^yport~18_FF_NODE top^yport~18
+1 1
+
+.names top^yport~19_FF_NODE top^yport~19
+1 1
+
+.names top^yport~20_FF_NODE top^yport~20
+1 1
+
+.names top^yport~21_FF_NODE top^yport~21
+1 1
+
+.names top^yport~22_FF_NODE top^yport~22
+1 1
+
+.names top^yport~23_FF_NODE top^yport~23
+1 1
+
+.names top^yport~24_FF_NODE top^yport~24
+1 1
+
+.names top^yport~25_FF_NODE top^yport~25
+1 1
+
+.names top^yport~26_FF_NODE top^yport~26
+1 1
+
+.names top^yport~27_FF_NODE top^yport~27
+1 1
+
+.names top^yport~28_FF_NODE top^yport~28
+1 1
+
+.names top^yport~29_FF_NODE top^yport~29
+1 1
+
+.names top^yport~30_FF_NODE top^yport~30
+1 1
+
+.names top^yport~31_FF_NODE top^yport~31
+1 1
+
+.names top^uport~0_FF_NODE top^uport~0
+1 1
+
+.names top^uport~1_FF_NODE top^uport~1
+1 1
+
+.names top^uport~2_FF_NODE top^uport~2
+1 1
+
+.names top^uport~3_FF_NODE top^uport~3
+1 1
+
+.names top^uport~4_FF_NODE top^uport~4
+1 1
+
+.names top^uport~5_FF_NODE top^uport~5
+1 1
+
+.names top^uport~6_FF_NODE top^uport~6
+1 1
+
+.names top^uport~7_FF_NODE top^uport~7
+1 1
+
+.names top^uport~8_FF_NODE top^uport~8
+1 1
+
+.names top^uport~9_FF_NODE top^uport~9
+1 1
+
+.names top^uport~10_FF_NODE top^uport~10
+1 1
+
+.names top^uport~11_FF_NODE top^uport~11
+1 1
+
+.names top^uport~12_FF_NODE top^uport~12
+1 1
+
+.names top^uport~13_FF_NODE top^uport~13
+1 1
+
+.names top^uport~14_FF_NODE top^uport~14
+1 1
+
+.names top^uport~15_FF_NODE top^uport~15
+1 1
+
+.names top^uport~16_FF_NODE top^uport~16
+1 1
+
+.names top^uport~17_FF_NODE top^uport~17
+1 1
+
+.names top^uport~18_FF_NODE top^uport~18
+1 1
+
+.names top^uport~19_FF_NODE top^uport~19
+1 1
+
+.names top^uport~20_FF_NODE top^uport~20
+1 1
+
+.names top^uport~21_FF_NODE top^uport~21
+1 1
+
+.names top^uport~22_FF_NODE top^uport~22
+1 1
+
+.names top^uport~23_FF_NODE top^uport~23
+1 1
+
+.names top^uport~24_FF_NODE top^uport~24
+1 1
+
+.names top^uport~25_FF_NODE top^uport~25
+1 1
+
+.names top^uport~26_FF_NODE top^uport~26
+1 1
+
+.names top^uport~27_FF_NODE top^uport~27
+1 1
+
+.names top^uport~28_FF_NODE top^uport~28
+1 1
+
+.names top^uport~29_FF_NODE top^uport~29
+1 1
+
+.names top^uport~30_FF_NODE top^uport~30
+1 1
+
+.names top^uport~31_FF_NODE top^uport~31
+1 1
+
+.end
+
+.model multiply
+.inputs  a[0]  a[1]  a[2]  a[3]  a[4]  a[5]  a[6]  a[7]  a[8] \
+  a[9]  a[10]  a[11]  a[12]  a[13]  a[14]  a[15]  a[16]  a[17]  a[18]  a[19] \
+  a[20]  a[21]  a[22]  a[23]  a[24]  a[25]  a[26]  a[27]  a[28]  a[29]  a[30] \
+  a[31]  a[32]  a[33]  a[34]  a[35]  b[0]  b[1]  b[2]  b[3]  b[4]  b[5]  b[6] \
+  b[7]  b[8]  b[9]  b[10]  b[11]  b[12]  b[13]  b[14]  b[15]  b[16]  b[17] \
+  b[18]  b[19]  b[20]  b[21]  b[22]  b[23]  b[24]  b[25]  b[26]  b[27]  b[28] \
+  b[29]  b[30]  b[31]  b[32]  b[33]  b[34]  b[35]
+.outputs out[0] out[1] out[2] out[3] out[4] out[5] out[6] out[7] \
+ out[8] out[9] out[10] out[11] out[12] out[13] out[14] out[15] out[16] \
+ out[17] out[18] out[19] out[20] out[21] out[22] out[23] out[24] \
+ out[25] out[26] out[27] out[28] out[29] out[30] out[31] out[32] \
+ out[33] out[34] out[35] out[36] out[37] out[38] out[39] out[40] \
+ out[41] out[42] out[43] out[44] out[45] out[46] out[47] out[48] \
+ out[49] out[50] out[51] out[52] out[53] out[54] out[55] out[56] \
+ out[57] out[58] out[59] out[60] out[61] out[62] out[63] out[64] \
+ out[65] out[66] out[67] out[68] out[69] out[70] out[71]
+.blackbox
+.end
+
