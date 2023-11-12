@@ -1,6 +1,6 @@
 # FELUT
 Source code of Exploration_of_FPGA_PLB_Architecture_Base_on_LUT_and_Microgates
-To evaluate the proposed PLB structure (FE-LUT6), this subtask employs a Python script to invoke the aforementioned open-source EDA tools, realizing various stages of the evaluation process. 
+To evaluate the proposed PLB structure (FE-LUT6), this project employs a Python script to invoke the aforementioned open-source EDA tools, realizing various stages of the evaluation process. 
 The process comprises the following key steps: 
 1) Utilizing Odin II for logic synthesis;
 2) Employing ABC for technology mapping tailored to complex PLBs. This technology mapping involves the offline establishment of a Boolean matching function library and the invocation of a pre-built library for technology mapping (refer to Chapter Two for details); 
